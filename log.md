@@ -4,7 +4,44 @@
 
 ---
 
-## [2026-05-08] ingest | 全量数据抓取
+---
+
+## [2026-05-13] ingest | 补充异常经营/失联机构法规
+
+- 从 parsed_html_results.json 提取法规引用，创建 3 个法规页
+- 更新 233 个异常经营/失联机构 entity 页，补充"依据法规"链接
+- 更新 reg_name_map.json（新增 5 条映射）
+- 更新 index.md
+
+### 创建/更新的页面
+
+- wiki/regulations/关于私募基金管理人在异常经营情形下提交专项法律意见书的公告.md (296 引用)
+- wiki/regulations/关于进一步规范私募基金管理人登记若干事项的公告.md (86 引用)
+- wiki/regulations/私募基金管理人失联处理指引.md (48 引用)
+- wiki/entities/ (233 个 entity 页补充法规链接)
+- scripts/reg_name_map.json
+- scripts/supplement_regulations.py
+- index.md
+
+## [2026-05-13] ingest | 法规索引建立
+
+- 创建 `wiki/regulations/` 目录，12 个法规页面
+- 创建 `scripts/reg_name_map.json` 法规名称映射表（OCR变体/简称 → 标准全称）
+- 数据源: parsed_data_with_concepts.json
+- 法规页面包含：概述、关联违规类型、高频引用条款（含条款描述和关联违规）、典型案例
+- 更新 index.md 添加法规分类
+
+### 创建/更新的页面
+
+- wiki/regulations/ (12 个法规页)
+- scripts/reg_name_map.json
+- scripts/create_regulation_pages.py（法规页面生成脚本，可复用）
+- scripts/extract_reg_names.py（法规名变体提取脚本）
+- scripts/analyze_regulations.py（法规关联分析脚本）
+- index.md
+
+---
+
 
 ### 数据抓取完成
 

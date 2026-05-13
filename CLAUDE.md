@@ -69,6 +69,23 @@ llm-wiki-regulation/
 - **命名**：`违规类型.md`（如 `违规募集.md`）
 - **内容**：该违规类型的定义、典型案例汇总、处罚依据
 
+### 法规页 (regulations/)
+- **命名**：`法规全称.md`（如 `私募投资基金监督管理暂行办法.md`）
+- **内容**：法规概述、关联违规类型、高频引用条款、典型案例
+- **Frontmatter**：
+  ```yaml
+  ---
+  type: regulation
+  name: 私募投资基金监督管理暂行办法
+  short_name: 私募基金监管办法
+  issuing_body: 中国证监会
+  effective_date: 2014-08-21
+  cited_count: 456
+  tags: [信息披露违规, 未按规定登记备案]
+  ---
+  ```
+- **法规名映射表**：`scripts/reg_name_map.json`，格式 `{"OCR变体/简称": "标准全称"}`，供程序归一化读取，人工维护
+
 ### 分析页 (analysis/)
 - **命名**：`分析_主题.md`（如 `分析_2024年处罚趋势.md`）
 - **内容**：跨页面综合分析、对比表格、趋势图表
@@ -94,6 +111,32 @@ llm-wiki-regulation/
 6. 识别违规类型，更新或创建 `wiki/concepts/` 中的概念页
 7. 更新 `index.md` 中的目录索引
 8. 在 `log.md` 中记录本次 ingest 操作
+9. 执行数据质量校验（见下方"数据质量校验"），FAIL 项记入 `log.md`
+
+### 数据质量校验
+
+每次 ingest 完成后必须执行以下检查，不得跳过。
+
+**1. 名称规范**
+- 文件名和 frontmatter `name` 不得包含"以下简称XXX"等 OCR 残留
+- 文件名与 `name` 字段必须一致
+
+**2. Frontmatter 完整性**
+- 必填字段：`type`, `name`, `subtype`, `source_count`, `first_incident`, `latest_incident`, `tags`
+- `source_count` = 正文实际案件数
+- `tags` 覆盖该 entity 涉及的全部模块
+- `first_incident` ≤ `latest_incident`，且不能是未来日期
+
+**3. 内容结构**
+- 三个 section 缺一不可：`## 基本信息`、`## 处罚记录`、`## 违规类型汇总`
+- 违规类型必须链接到 `wiki/concepts/` 页面
+- 正文中的字号、日期不得有遗漏
+
+**4. 抽样验证**
+随机抽 10-15 个 entity，比对原始文件与 entity 页的日期、字号、处罚措施。通过率 < 90% 视为不合格。
+
+**5. 校验输出**
+上述检查整合到 `scripts/validate_ingest.py`。校验结果、解析失败的 entity 清单（原始文本 < 40 行、OCR 无有效输出、有字号无违规行为）一并写入 `log.md`。
 
 ### Query（查询）流程
 
