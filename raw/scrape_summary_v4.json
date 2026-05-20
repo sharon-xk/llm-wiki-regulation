@@ -1,0 +1,60 @@
+{
+  "纪律处分_机构": [
+    {
+      "status": "scan_only",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/纪律处分/机构/202604_P020260430636581133360.pdf"
+    },
+    {
+      "status": "success",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/纪律处分/机构/202605_P020260508594580696293.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "scan_only",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/纪律处分/机构/202604_P020260430637684494263.pdf"
+    },
+    {
+      "status": "scan_only",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/纪律处分/机构/202605_P020260508595084826608.pdf"
+    },
+    {
+      "status": "success",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/纪律处分/机构/202605_P020260515558728857382.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/纪律处分/机构/202605_P020260507632461874372.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "scan_only",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/纪律处分/机构/202605_P020260515558923813765.pdf"
+    },
+    {
+      "status": "success",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/纪律处分/机构/202604_P020260430635105082094.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "scan_only",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/纪律处分/机构/202604_P020260430675613592382.pdf"
+    },
+    {
+      "status": "scan_only",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/纪律处分/机构/202604_P020260430626859345466.pdf"
+    }
+  ],
+  "异常经营": [
+    {
+      "status": "success",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/异常经营/202605_t20260508_27685.html"
+    }
+  ],
+  "失联机构": [
+    {
+      "status": "success",
+      "file": "/Users/sharon/ai-project/llm-wiki-regulation/raw/失联机构/202604_t20260430_27638.html"
+    }
+  ]
+}

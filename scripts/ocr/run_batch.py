@@ -51,10 +51,10 @@ def get_pdf_txt_pairs():
 
 def ocr_one_pdf(args):
     """处理单个 PDF，OCR 结果写入目标 TXT 文件"""
-    pdf_path, txt_path, entity_name = args
+    pdf_path, txt_path, entity_name, force = args
 
-    # 如果 TXT 已有完整内容（>50行），跳过
-    if os.path.exists(txt_path):
+    # 如果 TXT 已有完整内容（>50行）且非强制模式，跳过
+    if not force and os.path.exists(txt_path):
         with open(txt_path, 'r') as f:
             existing_lines = len(f.readlines())
         if existing_lines > 50:
@@ -102,6 +102,11 @@ def ocr_one_pdf(args):
 
         # 写入目标 TXT
         combined = "\n".join(full_text)
+
+        # OCR 后处理纠正
+        from scripts.ocr.fix_ocr import fix_ocr_text
+        combined = fix_ocr_text(combined)
+
         with open(txt_path, 'w') as f:
             f.write(combined)
 
@@ -117,6 +122,7 @@ def ocr_one_pdf(args):
 def main():
     workers = 4
     limit = 0  # 0 means all
+    force = False
 
     # parse args
     args = sys.argv[1:]
@@ -128,14 +134,21 @@ def main():
         elif args[i] == "--limit" and i + 1 < len(args):
             limit = int(args[i + 1])
             i += 2
+        elif args[i] == "--force":
+            force = True
+            i += 1
         else:
             i += 1
 
     os.makedirs(TMP_BASE, exist_ok=True)
 
     pairs = get_pdf_txt_pairs()
+    # 添加 force 标志到每个 pair
+    pairs = [(pdf, txt, name, force) for pdf, txt, name in pairs]
     total = len(pairs)
     print(f"共 {total} 个 PDF 待处理")
+    if force:
+        print("强制模式: 跳过条件已禁用，将重跑所有文件")
 
     if limit > 0:
         pairs = pairs[:limit]

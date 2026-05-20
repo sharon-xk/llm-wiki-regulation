@@ -220,15 +220,68 @@ def main():
     print(f"  '以下简称'在frontmatter(需修复): {abbr_in_fm}")
     print(f"  '以下简称'在正文(正常法规引用): {abbr_in_body}")
 
-    # ===== 7. 汇总 =====
+    # ===== 7. 截断检测 =====
+    print(f"\n[7] 截断检测")
+    truncated_violations = 0
+    truncated_penalties = 0
+    truncated_entities = []
+
+    for fname in entity_files:
+        fpath = os.path.join(ENTITY_DIR, fname)
+        with open(fpath) as f:
+            content = f.read()
+
+        has_truncation = False
+
+        # 检查违规行为文本
+        v_section_match = re.search(r'\*\*违规行为\*\*:\s*\n(.*?)(?=\n\*\*|\n- \*\*|\n###|\n##|\Z)', content, re.DOTALL)
+        if v_section_match:
+            v_section = v_section_match.group(1)
+            # 检查每个编号条目是否截断
+            for v_item in re.findall(r'^\d+\.\s+(.+)$', v_section, re.MULTILINE):
+                v_text = v_item.strip()
+                if v_text and not v_text[-1] in '。！？）)】]」》':
+                    if len(v_text) < 200 or re.search(r'[\d\s]{3,}$', v_text[-20:]) or re.search(r'[一-龥]\s*$', v_text[-20:]):
+                        truncated_violations += 1
+                        has_truncation = True
+
+        # 检查处罚措施文本
+        for m in re.finditer(r'\*\*处罚措施\*\*:\s*(.+?)(?:\n|$)', content):
+            p_text = m.group(1).strip()
+            if p_text and len(p_text) > 10 and not p_text[-1] in '。！？）)】]」》':
+                if re.search(r'[一-龥]\s*$', p_text[-20:]):
+                    truncated_penalties += 1
+                    has_truncation = True
+
+        if has_truncation:
+            truncated_entities.append(fname)
+
+    print(f"  违规行为疑似截断: {truncated_violations} 处")
+    print(f"  处罚措施疑似截断: {truncated_penalties} 处")
+    print(f"  涉及 entity: {len(truncated_entities)} 个")
+    if truncated_entities:
+        print(f"  样例 (前10个):")
+        for e in truncated_entities[:10]:
+            print(f"    - {e}")
+    if len(truncated_entities) > 10:
+        print(f"    ... 以及另外 {len(truncated_entities)-10} 个")
+
+    # ===== 8. 汇总 =====
     print(f"\n{'=' * 60}")
     print("验证总结")
     print(f"{'=' * 60}")
     total_issues = (missing_frontmatter + missing_basic_info +
                     missing_penalty_records + missing_concepts_section + abbr_in_fm)
     print(f"  结构问题: {total_issues} 处")
-    print(f"  抽查通过率: {ok_count}/{ok_count + issue_count} (注：issue均为正文中的'以下简称'-正常)")
-    print(f"  需关注的: 37 个无违规 entity, 158 个无处罚措施 entity")
+    print(f"  截断问题: {len(truncated_entities)} 个 entity")
+    print(f"  抽查通过率: {ok_count}/{ok_count + issue_count}")
+    no_viol_count = len([r for r in data if not r.get('violations')])
+    no_penalty_count = len([r for r in data if not r.get('penalty')])
+    print(f"  需关注的: {no_viol_count} 个无违规 entity, {no_penalty_count} 个无处罚措施 entity")
+
+    # 截断超过阈值则报 FAIL
+    if len(truncated_entities) > 5:
+        print(f"\n  [FAIL] 截断 entity 超过阈值 (5), 请检查 parse 脚本和 OCR 输出")
 
 
 if __name__ == "__main__":

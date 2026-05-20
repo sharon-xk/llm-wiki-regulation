@@ -35,21 +35,16 @@ MODULE_SUBDIRS = {
 ACTIVE_MODULES = list(MODULE_SUBDIRS.keys())
 
 
-def run_py(script_rel, desc):
+def run_py(script_rel, desc="", extra_args=None):
     path = SCRIPTS_DIR / script_rel
     if not path.exists():
         print(f"  [SKIP] {path} 不存在")
         return True
     print(f"\n{'=' * 50}\n  {desc}\n{'=' * 50}")
     start = time.time()
-    result = subprocess.run(
-        [sys.executable, str(path)],
-        cwd=str(BASE_DIR), capture_output=True, text=True
-    )
+    cmd = [sys.executable, str(path)] + (extra_args or [])
+    result = subprocess.run(cmd, cwd=str(BASE_DIR))
     elapsed = time.time() - start
-    print(result.stdout[-2000:] if len(result.stdout) > 2000 else result.stdout)
-    if result.stderr:
-        print("[STDERR]", result.stderr[:500])
     ok = result.returncode == 0
     print(f"  {'OK' if ok else 'FAIL'} ({elapsed:.0f}s)")
     return ok
@@ -129,19 +124,23 @@ def main():
     if not since:
         state = load_state()
         module_dates = state.get("module_last_dates", {})
-        # 取各模块中最小的日期，确保不遗漏任一模块的补发数据
-        dates = [v for v in module_dates.values() if v != '00000000']
+        # 仅取当前活跃模块的日期，取最小确保不遗漏补发数据
+        active_dates = {k: v for k, v in module_dates.items() if k in ACTIVE_MODULES and v != '00000000'}
+        dates = list(active_dates.values())
         since = min(dates) if dates else '00000000'
         print(f"读取状态, 各模块日期:")
-        for k, v in module_dates.items():
-            print(f"  {k}: {v}")
-        print(f"  → --since 取最小值: {since}")
+        for k in sorted(set(list(ACTIVE_MODULES) + list(module_dates.keys()))):
+            label = module_dates.get(k, '无记录')
+            if k not in ACTIVE_MODULES:
+                label += '（已停用，不计入since）'
+            print(f"  {k}: {label}")
+        print(f"  → --since 取活跃模块最小值: {since}")
     else:
         print(f"手动指定起始日期: {since}")
 
     # ── 1. 增量爬取 ──
     files_before = count_raw_files()
-    if not run_py("scrape/scrape_amac.py", f"Step 1: 增量爬取 (--since {since})"):
+    if not run_py("scrape/scrape_amac.py", f"Step 1: 增量爬取 (--since {since})", ["--since", since]):
         print("爬取失败, 终止")
         sys.exit(1)
     files_after = count_raw_files()
@@ -155,28 +154,30 @@ def main():
         print(f"  {k}: {v}")
 
     if new_files == 0:
-        # 没有新文件，但仍更新状态中日期落后的模块（补发场景）
+        # 即使文件数未变，也要检测模块日期是否较状态中记录的有更新
+        # （例如上次运行崩溃导致文件已下载但状态未保存，或人工补充了 raw 文件）
         state = load_state()
         old_dates = state.get("module_last_dates", {})
-        updated = False
+        dates_advanced = False
         for key in ACTIVE_MODULES:
             if new_module_dates.get(key, '00000000') > old_dates.get(key, '00000000'):
-                updated = True
-        if updated:
-            save_state(new_module_dates)
-        print("无新增数据, 跳过后续步骤")
-        return
+                dates_advanced = True
+        if not dates_advanced:
+            print("无新增数据, 跳过后续步骤")
+            return
+        print("文件数未变但模块日期已更新，继续重建 wiki...")
 
     # ── 2. 全量重解析 ──
     run_py("parse/parse_txt.py", "Step 2: 解析纪律处分 TXT")
     run_py("parse/parse_html.py", "Step 2: 解析 HTML 公告")
-    run_py("parse/extract_structured.py", "Step 2: 提取结构化数据")
 
     # ── 3. 重建 wiki ──
-    run_py("wiki/concept_map.py", "Step 3: 违规 → 概念映射")
-    run_py("wiki/update_entities.py", "Step 3: 更新 entity 内容")
+    # 顺序关键：先创建 entity → 提取结构化数据 → 映射概念 → 补充概念链接
     run_py("wiki/create_entities.py", "Step 3: 创建 entity 页面")
     run_py("wiki/create_modules.py", "Step 3: 创建 module 页面")
+    run_py("parse/extract_structured.py", "Step 3: 提取结构化数据")
+    run_py("wiki/concept_map.py", "Step 3: 违规 → 概念映射")
+    run_py("wiki/update_entities.py", "Step 3: 更新 entity 概念链接")
     run_py("wiki/create_concepts.py", "Step 3: 创建 concept 页面")
     run_py("wiki/create_analysis.py", "Step 3: 创建 analysis 页面")
     run_py("wiki/create_regulations.py", "Step 3: 创建法规页面")

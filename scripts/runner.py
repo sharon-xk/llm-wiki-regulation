@@ -50,12 +50,13 @@ def main():
         elif step == "parse":
             run("parse/parse_txt.py", "Step 3: 解析纪律处分 TXT")
             run("parse/parse_html.py", "Step 3: 解析 HTML 公告")
-            run("parse/extract_structured.py", "Step 3: 提取结构化数据")
         elif step == "wiki":
-            run("wiki/concept_map.py", "Step 4: 违规→概念映射")
-            run("wiki/update_entities.py", "Step 4: 更新 entity 内容")
+            # 顺序关键：先创建 entity → 提取结构化数据 → 映射概念 → 补充概念链接
             run("wiki/create_entities.py", "Step 4: 创建 entity 页面")
             run("wiki/create_modules.py", "Step 4: 创建 module 页面")
+            run("parse/extract_structured.py", "Step 4: 提取结构化数据")
+            run("wiki/concept_map.py", "Step 4: 违规→概念映射")
+            run("wiki/update_entities.py", "Step 4: 更新 entity 概念链接")
             run("wiki/create_concepts.py", "Step 4: 创建 concept 页面")
             run("wiki/create_analysis.py", "Step 4: 创建 analysis 页面")
             run("wiki/create_regulations.py", "Step 4: 创建法规页面")

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年5月 私募基金监管风险监测报告</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #f5f6fa;
+    --card-bg: #ffffff;
+    --text: #2d3436;
+    --text-secondary: #636e72;
+    --red: #e74c3c;
+    --orange: #f39c12;
+    --yellow: #fdcb6e;
+    --blue: #3498db;
+    --green: #27ae60;
+    --purple: #6c5ce7;
+    --border: #e0e4e8;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.10);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 24px;
+  }
+
+  .dashboard {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 32px 40px;
+    box-shadow: var(--shadow-lg);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; letter-spacing: 1px; }
+  .header .subtitle { font-size: 14px; opacity: 0.7; }
+  .header .meta { display: flex; gap: 32px; margin-top: 16px; font-size: 13px; }
+  .header .meta span { opacity: 0.65; }
+
+  /* KPI cards */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .kpi-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--blue);
+  }
+  .kpi-card.warn { border-left-color: var(--orange); }
+  .kpi-card.danger { border-left-color: var(--red); }
+  .kpi-card.success { border-left-color: var(--green); }
+  .kpi-card .label { font-size: 13px; color: var(--text-secondary); margin-bottom: 4px; }
+  .kpi-card .value { font-size: 32px; font-weight: 700; }
+  .kpi-card .change { font-size: 12px; margin-top: 4px; }
+  .kpi-card .change.up { color: var(--red); }
+  .kpi-card .change.down { color: var(--green); }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 28px 32px;
+    box-shadow: var(--shadow);
+  }
+  .section h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section h2 .icon { font-size: 20px; }
+
+  /* Chart container */
+  .chart-wrap { position: relative; width: 100%; }
+  .chart-wrap.half { width: 48%; display: inline-block; }
+  .chart-row { display: flex; gap: 24px; align-items: flex-start; }
+  .chart-box { flex: 1; }
+  .chart-box canvas { max-height: 320px; }
+
+  /* Alert cards */
+  .alert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .alert-card {
+    border-radius: 12px;
+    padding: 20px 24px;
+    border: 1px solid var(--border);
+  }
+  .alert-card.critical { background: #fff5f5; border-color: #feb2b2; }
+  .alert-card.high { background: #fffaf0; border-color: #fbd38d; }
+  .alert-card.medium { background: #fffff0; border-color: #faf089; }
+  .alert-card .level {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .alert-card.critical .level { background: var(--red); color: #fff; }
+  .alert-card.high .level { background: var(--orange); color: #fff; }
+  .alert-card.medium .level { background: var(--yellow); color: #333; }
+  .alert-card h3 { font-size: 15px; margin-bottom: 8px; }
+  .alert-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.7; }
+  .alert-card ul { margin-top: 8px; padding-left: 18px; font-size: 13px; color: var(--text-secondary); }
+  .alert-card ul li { margin-bottom: 4px; }
+
+  /* Migration cards */
+  .migration-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .migration-card {
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f1ff 100%);
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e0e2f8;
+  }
+  .migration-card .tag {
+    background: var(--purple);
+    color: #fff;
+    padding: 3px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .migration-card .arrow { color: var(--purple); font-size: 16px; margin: 8px 0; display: block; }
+  .migration-card .from-to { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+  .migration-card .cases { margin-top: 12px; font-size: 12px; color: #555; }
+  .migration-card .cases strong { color: var(--red); }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #f8f9fa; text-align: left; padding: 10px 14px; font-weight: 600; border-bottom: 2px solid #e0e4e8; color: var(--text-secondary); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
+  tr:hover td { background: #fafbfc; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .badge.red { background: #ffe0e0; color: #c0392b; }
+  .badge.orange { background: #fff3e0; color: #e67e22; }
+  .badge.purple { background: #f0e8ff; color: #6c3eb8; }
+
+  /* Risk heat map */
+  .heat-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .heat-label { width: 160px; font-size: 13px; text-align: right; flex-shrink: 0; }
+  .heat-bar-wrap { flex: 1; background: #f0f0f0; border-radius: 6px; height: 28px; overflow: hidden; position: relative; }
+  .heat-bar {
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    min-width: fit-content;
+    transition: width 1s ease;
+  }
+  .heat-score { width: 50px; font-size: 14px; font-weight: 700; text-align: left; }
+
+  /* Callout */
+  .callout {
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .callout.action {
+    background: #f0f7ff;
+    border: 1px solid #b8d8ff;
+  }
+  .callout.action h4 { color: var(--blue); margin-bottom: 8px; font-size: 14px; }
+  .callout.action ol { padding-left: 20px; }
+
+  .callout.summary {
+    background: linear-gradient(135deg, #fff9f0, #fef5e7);
+    border: 1px solid #fad7a0;
+  }
+  .callout.summary h4 { color: var(--orange); margin-bottom: 8px; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    padding: 16px;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .kpi-row { grid-template-columns: repeat(2, 1fr); }
+    .alert-grid, .migration-row { grid-template-columns: 1fr; }
+    .chart-row { flex-direction: column; }
+    .chart-wrap.half { width: 100%; }
+    .heat-label { width: 120px; font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+<div class="dashboard">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>私募基金监管风险监测报告</h1>
+    <div class="subtitle">中国证券投资基金业协会（AMAC）自律管理处罚数据分析</div>
+    <div class="meta">
+      <span>报告周期：2026年5月</span>
+      <span>数据截至：2026-05-11</span>
+      <span>覆盖实体：854个</span>
+      <span>覆盖模块：纪律处分 / 异常经营 / 失联机构</span>
+    </div>
+  </div>
+
+  <!-- KPI Cards -->
+  <div class="kpi-row">
+    <div class="kpi-card danger">
+      <div class="label">4月纪律处分件数</div>
+      <div class="value">25<span style="font-size:16px;color:#636e72"> 件</span></div>
+      <div class="change up">▲ 较Q1月均(5件)飙升400%</div>
+    </div>
+    <div class="kpi-card warn">
+      <div class="label">"未尽谨慎勤勉义务"排名</div>
+      <div class="value">#2<span style="font-size:16px;color:#636e72"> / 10</span></div>
+      <div class="change up">▲ 历史首次超越"未按规定登记备案"</div>
+    </div>
+    <div class="kpi-card">
+      <div class="label">跨模块叠加风险机构</div>
+      <div class="value">5<span style="font-size:16px;color:#636e72"> 家</span></div>
+      <div class="change">纪律处分+失联/异常经营双模块</div>
+    </div>
+    <div class="kpi-card success">
+      <div class="label">撤销管理人登记</div>
+      <div class="value">3<span style="font-size:16px;color:#636e72"> 家</span></div>
+      <div class="change down">成都瑞华 / 济南乐知 / 浙江优策</div>
+    </div>
+  </div>
+
+  <!-- Charts Row: Violation Type + Monthly Trend -->
+  <div class="section">
+    <h2><span class="icon">📊</span> 违规类型分布 & 月度趋势</h2>
+    <div class="chart-row">
+      <div class="chart-box">
+        <canvas id="chartViolation" height="280"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="chartMonthly" height="280"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- 三大监管迁移 -->
+  <div class="section">
+    <h2><span class="icon">🔍</span> 监管关注方向的三大迁移</h2>
+    <div class="migration-row">
+
+      <div class="migration-card">
+        <span class="tag">迁移一</span>
+        <span class="arrow">从"有没有备案" → "备案信息真不真"</span>
+        <div class="from-to">
+          AMAC已从简单的备案覆盖率管理，转向<strong>备案数据质量治理</strong>。2025年下半年以来大量案件涉及虚假填报高管信息、实际控制人信息虚假记载。
+        </div>
+        <div class="cases"><strong>典型案例：</strong>陕西望和（虚假填报高管）、浙江优策（实控人信息虚假记载）、浙江安桥（法人已离职仍登记）</div>
+      </div>
+
+      <div class="migration-card">
+        <span class="tag">迁移二</span>
+        <span class="arrow">从"单一违规" → "通道化/让渡管理权"</span>
+        <div class="from-to">
+          这是<strong>2026年最突出的新兴风险模式</strong>。登记的管理人不实际履职，实际运作者不在监管视野内。近3个月集中出现6起此类案件。
+        </div>
+        <div class="cases"><strong>典型案例：</strong>湘联控股（刘某实际运作）、黑岩中盛（通道费12万元）、上海烟万（按第三方指示决策）、杭州蚤慧（出借通道）</div>
+      </div>
+
+      <div class="migration-card">
+        <span class="tag">迁移三</span>
+        <span class="arrow">从"制度缺失" → "全流程内控失效"</span>
+        <div class="from-to">
+          AMAC不再逐条认定单项制度缺失，而是<strong>系统性描述内控架构的全面崩塌</strong>：从人员、制度、执行、监督四个维度综合认定。
+        </div>
+        <div class="cases"><strong>典型案例：</strong>广东同创（六项内控问题同时存在）、济南乐知（七项违规覆盖6个概念类型）、深圳前海锦华（沦为从业资格获取工具）</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 风险热力图 -->
+  <div class="section">
+    <h2><span class="icon">🌡️</span> 风险热力图</h2>
+    <div class="heat-row">
+      <span class="heat-label">信息披露违规</span>
+      <div class="heat-bar-wrap"><div class="heat-bar" style="width:100%;background:linear-gradient(90deg,#c0392b,#e74c3c)">持续第1位 · 2026年16件</div></div>
+      <span class="heat-score" style="color:#c0392b">12</span>
+    </div>
+    <div class="heat-row">
+      <span class="heat-label">未尽谨慎勤勉义务</span>
+      <div class="heat-bar-wrap"><div class="heat-bar" style="width:100%;background:linear-gradient(90deg,#e74c3c,#e67e22)">快速上升 · 2026年15件</div></div>
+      <span class="heat-score" style="color:#c0392b">12</span>
+    </div>
+    <div class="heat-row">
+      <span class="heat-label">通道/让渡管理权</span>
+      <div class="heat-bar-wrap"><div class="heat-bar" style="width:83%;background:linear-gradient(90deg,#e67e22,#f39c12)">新兴热点 · 近3月6件</div></div>
+      <span class="heat-score" style="color:#e67e22">10</span>
+    </div>
+    <div class="heat-row">
+      <span class="heat-label">合规风控挂名化</span>
+      <div class="heat-bar-wrap"><div class="heat-bar" style="width:75%;background:linear-gradient(90deg,#f39c12,#fdcb6e)">系统性风险</div></div>
+      <span class="heat-score" style="color:#e67e22">9</span>
+    </div>
+    <div class="heat-row">
+      <span class="heat-label">未按规定登记备案</span>
+      <div class="heat-bar-wrap"><div class="heat-bar" style="width:67%;background:linear-gradient(90deg,#fdcb6e,#ffeaa7)">2026年12件</div></div>
+      <span class="heat-score" style="color:#f39c12">8</span>
+    </div>
+    <div class="heat-row">
+      <span class="heat-label">投资者适当性违规</span>
+      <div class="heat-bar-wrap"><div class="heat-bar" style="width:67%;background:linear-gradient(90deg,#fdcb6e,#ffeaa7)">测评有效性成焦点</div></div>
+      <span class="heat-score" style="color:#f39c12">8</span>
+    </div>
+    <div class="heat-row">
+      <span class="heat-label">承诺保本收益</span>
+      <div class="heat-bar-wrap"><div class="heat-bar" style="width:50%;background:linear-gradient(90deg,#ffeaa7,#dfe6e9)">下降趋势 · 2026年5件</div></div>
+      <span class="heat-score" style="color:#636e72">6</span>
+    </div>
+    <div class="heat-row">
+      <span class="heat-label">挪用基金财产</span>
+      <div class="heat-bar-wrap"><div class="heat-bar" style="width:33%;background:linear-gradient(90deg,#dfe6e9,#b2bec3)">低频但高危害</div></div>
+      <span class="heat-score" style="color:#636e72">4</span>
+    </div>
+  </div>
+
+  <!-- 风险预警 -->
+  <div class="section">
+    <h2><span class="icon">🚨</span> 风险预警与排查建议</h2>
+    <div class="alert-grid">
+
+      <div class="alert-card critical">
+        <span class="level">严重 · CRITICAL</span>
+        <h3>通道业务 / 管理权让渡</h3>
+        <p>登记管理人不实际履职，将投资决策、募集、运作等核心职能让渡给第三方，自身仅收取通道费。实际运作者完全脱离监管视野，投资者无法追溯有效责任主体。</p>
+        <ul>
+          <li>筛查"投资决策委员会外部成员占比过高"或"长期无自主投资决策记录"的管理人</li>
+          <li>交叉比对管理人管理费收入与实际人员规模</li>
+          <li>排查与第三方签订"财务顾问协议"且费用与募集挂钩的管理人</li>
+          <li>关注单一投资者占基金份额过高的产品</li>
+        </ul>
+      </div>
+
+      <div class="alert-card high">
+        <span class="level">高危 · HIGH</span>
+        <h3>合规风控负责人"挂名化"</h3>
+        <p>大量案件揭示合规风控负责人仅为名义登记、不实际履职。案件中被认定为"自认挂名""登记为挂职""仅配合登记"等。</p>
+        <ul>
+          <li>抽查合规风控负责人的社保缴纳记录是否在登记机构</li>
+          <li>检查是否在其他机构同时任职</li>
+          <li>对合规风控负责人一年内变更2次以上的机构重点关注</li>
+          <li>核查从业人员系统登记与实际在岗人数的一致性</li>
+        </ul>
+      </div>
+
+      <div class="alert-card medium">
+        <span class="level">关注 · MEDIUM</span>
+        <h3>投资者风险测评有效性</h3>
+        <p>风险测评问卷"标注分值"已成行业普遍做法，使投资者可自行调整到期望的风险等级。至少5家机构因此被处罚。</p>
+        <ul>
+          <li>抽查20-30家管理人的风险测评问卷，检查是否标注分值</li>
+          <li>检查风险等级匹配逻辑是否存在"成长型"匹配所有风险等级</li>
+          <li>重点复核"风险不匹配但签署警示函"的案例</li>
+        </ul>
+      </div>
+
+      <div class="alert-card medium">
+        <span class="level">关注 · MEDIUM</span>
+        <h3>信息披露账号"假开立"</h3>
+        <p>在备案系统中为投资者"开立"了查询账号但从未实际使用。成都瑞华投资者查询账号开立率仅6.67%，济南乐知部分产品仅35%。</p>
+        <ul>
+          <li>从信披备份系统导出"账号开立率<100%"的管理人清单</li>
+          <li>对开立率低于50%的进行重点检查</li>
+          <li>交叉比对开立率与投资者投诉量</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 重复处罚识别 -->
+  <div class="section">
+    <h2><span class="icon">⚠️</span> 同一主体重复处罚 / 高风险机构识别</h2>
+
+    <h3 style="font-size:15px;margin-bottom:12px;color:var(--text-secondary);">跨模块叠加风险（出现在2个及以上监管模块）</h3>
+    <table style="margin-bottom:28px;">
+      <thead>
+        <tr><th>机构名称</th><th>涉及模块</th><th>风险特征</th><th>状态</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>北京中金华创投资管理有限公司</strong></td>
+          <td>异常经营 + 失联机构 + 自律措施</td>
+          <td>⚠️ 唯一三模块叠加机构，2019年首次失联</td>
+          <td><span class="badge red">极高风险</span></td>
+        </tr>
+        <tr>
+          <td><strong>北京泰合万峰投资管理有限公司</strong></td>
+          <td>纪律处分 + 失联机构</td>
+          <td>2025年10月受纪律处分（公开谴责），2026年4月进入失联名单</td>
+          <td><span class="badge red">极高风险</span></td>
+        </tr>
+        <tr>
+          <td><strong>北京瑞奇融通投资管理有限公司</strong></td>
+          <td>异常经营 + 失联机构</td>
+          <td>异常经营后未能整改，进入失联状态</td>
+          <td><span class="badge orange">高风险</span></td>
+        </tr>
+        <tr>
+          <td><strong>南京安赐投资管理有限公司</strong></td>
+          <td>纪律处分 + 失联机构</td>
+          <td>纪律处分后仍无法联系</td>
+          <td><span class="badge orange">高风险</span></td>
+        </tr>
+        <tr>
+          <td><strong>深圳市斯沃普资产管理有限公司</strong></td>
+          <td>纪律处分 + 异常经营</td>
+          <td>2026年4月同时触发两个模块</td>
+          <td><span class="badge orange">高风险</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:15px;margin-bottom:12px;color:var(--text-secondary);">单一案件多项违规叠加（合规体系全面失效）</h3>
+    <table>
+      <thead>
+        <tr><th>机构名称</th><th>违规项数</th><th>处罚措施</th><th>违规组合特征</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>成都瑞华创新私募基金管理有限公司</strong></td>
+          <td><span class="badge red">9项</span></td>
+          <td>撤销管理人登记</td>
+          <td>资金池 + 挪用基金财产 + 超范围投资 + 未备案 + 人员违规，系统性违法违规</td>
+        </tr>
+        <tr>
+          <td><strong>济南乐知股权投资基金管理有限公司</strong></td>
+          <td><span class="badge red">7项</span></td>
+          <td>撤销管理人登记</td>
+          <td>从募集、推介、投后管理、适当性到人员配置全链条失控，覆盖6个概念类型</td>
+        </tr>
+        <tr>
+          <td><strong>浙江优策投资管理有限公司</strong></td>
+          <td><span class="badge orange">5项</span></td>
+          <td>撤销管理人登记</td>
+          <td>虚假记载 + 挪用基金财产 + 混同经营，涉及11只产品</td>
+        </tr>
+        <tr>
+          <td><strong>海南千寻私募基金管理有限公司</strong></td>
+          <td><span class="badge orange">5项</span></td>
+          <td>公开谴责</td>
+          <td>债券代持 + 关联交易未披露 + 投资运作违规</td>
+        </tr>
+        <tr>
+          <td><strong>广东同创基金管理有限公司</strong></td>
+          <td><span class="badge purple">6项内控</span></td>
+          <td>公开谴责</td>
+          <td>内控全面失效：关联交易无风控 + 账户使用不规范 + 合规风控负责人空缺5年</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout action">
+      <h4>📌 区域风险特别关注：武汉"当代系"机构集群暴雷</h4>
+      <p style="margin-bottom:8px;">2025年9月-11月，武汉当代科技集团关联的多家私募管理人密集被处罚：<strong>武汉妃道、考金众合、武汉迪通致和、武汉当代天信、天汗天蛋</strong>。共同特征包括：实际控制方代为保管证照公章、管理团队全部离职、无独立办公地址。建议对武汉当代系其他已备案管理人进行全面摸排。</p>
+    </div>
+  </div>
+
+  <!-- 月度趋势说明 -->
+  <div class="section">
+    <h2><span class="icon">📈</span> 月度处罚节奏分析</h2>
+    <div class="chart-row">
+      <div class="chart-box" style="flex:2">
+        <canvas id="chartYearly" height="240"></canvas>
+      </div>
+      <div class="chart-box" style="flex:1">
+        <div style="padding:12px;background:#f8f9fa;border-radius:8px;font-size:13px;line-height:1.8;">
+          <strong style="color:var(--red);">2026年4月（25件）</strong>为2024年以来单月次高，仅低于2025年12月（27件）的年末冲量。<br><br>
+          <strong>趋势判断：</strong>AMAC在Q2初集中处理跨年度存案（处罚字号以"2025"为主但公布于2026年）。<br><br>
+          预计5-6月仍将有2025年存案陆续公布，月度处罚量将维持在中高水平（<strong>10-15件/月</strong>）。<br><br>
+          <span style="color:var(--text-secondary);font-size:12px;">注：以上统计仅含机构，不含个人。</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Emerging Risk: Bond Market -->
+  <div class="section">
+    <h2><span class="icon">🆕</span> 新兴违规手法：债券代持与结构化发债</h2>
+    <div style="display:flex;gap:24px;align-items:flex-start;">
+      <div style="flex:1;font-size:13px;line-height:1.8;">
+        <p>2025年末至2026年初，出现了<strong style="color:var(--red);">私募基金参与债券市场违规</strong>的新模式，这是传统私募基金监管框架较少覆盖的领域：</p>
+        <ul style="margin-top:8px;padding-left:18px;">
+          <li><strong>海南千寻</strong>（2025-10）：通过"认购+代持"方式参与债券发行，配合发行人规避监管规定</li>
+          <li><strong>南京瞻之异</strong>（2025-12）：利用私募基金产品协助其他企业发行债券并收取费用归为公司收入</li>
+        </ul>
+        <p style="margin-top:12px;color:var(--orange);font-weight:600;">预计将成为2026年新的监管重点领域。</p>
+      </div>
+      <div style="flex:0 0 200px;background:#fff5f5;border-radius:12px;padding:16px;text-align:center;border:1px solid #feb2b2;">
+        <div style="font-size:36px;font-weight:700;color:var(--red);">2</div>
+        <div style="font-size:12px;color:var(--text-secondary);">已发现案例</div>
+        <div style="font-size:11px;color:#999;margin-top:4px;">均发生在2025Q4-2026Q1</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 总结与建议 -->
+  <div class="section">
+    <h2><span class="icon">💡</span> 总结：向业务人员传达的3个核心观点</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div style="background:#fff5f5;border-radius:12px;padding:20px;border:1px solid #feb2b2;">
+        <div style="font-size:24px;margin-bottom:8px;">❶</div>
+        <h3 style="font-size:14px;margin-bottom:8px;color:var(--red);">"通道业务"是当前最大的隐性风险</h3>
+        <p style="font-size:13px;color:var(--text-secondary);line-height:1.7;">表面是"未尽谨慎勤勉义务"，实质是管理人完全脱离投资管理职能。投资者一旦出现亏损，将面临<strong>"名义管理人不担责、实际运作者找不到"</strong>的困境。</p>
+      </div>
+      <div style="background:#fffaf0;border-radius:12px;padding:20px;border:1px solid #fbd38d;">
+        <div style="font-size:24px;margin-bottom:8px;">❷</div>
+        <h3 style="font-size:14px;margin-bottom:8px;color:var(--orange);">监管从"有没有做"转向"做得真不真"</h3>
+        <p style="font-size:13px;color:var(--text-secondary);line-height:1.7;">无论是备案信息、适当性管理、信息披露还是合规风控，AMAC不再满足于形式上的完成，而是在深入核查<strong>实质有效性</strong>。</p>
+      </div>
+      <div style="background:#f0f7ff;border-radius:12px;padding:20px;border:1px solid #b8d8ff;">
+        <div style="font-size:24px;margin-bottom:8px;">❸</div>
+        <h3 style="font-size:14px;margin-bottom:8px;color:var(--blue);">"当代系"暴雷是系统性风险信号</h3>
+        <p style="font-size:13px;color:var(--text-secondary);line-height:1.7;">同一实控人通过多家管理人分散运作的模式，一旦实控人出问题，<strong>旗下所有管理人同时失效</strong>，投资者权益难以保障。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    数据来源：wiki/entities (854实体) · wiki/concepts (10类违规) · wiki/modules (4个模块) · 报告生成于 2026-05-18
+  </div>
+
+</div>
+
+<script>
+// Chart.js 全局配置
+Chart.defaults.font.family = '-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif';
+Chart.defaults.font.size = 12;
+
+// 违规类型分布
+new Chart(document.getElementById('chartViolation'), {
+  type: 'bar',
+  data: {
+    labels: ['信息披露\n违规','未尽谨慎\n勤勉义务','未按规定\n登记备案','投资者\n适当性违规','违规募集','承诺保本\n收益','虚假登记\n备案','挪用基金\n财产'],
+    datasets: [{
+      label: '2026年(1-5月)',
+      data: [16, 15, 12, 11, 8, 5, 3, 2],
+      backgroundColor: ['#e74c3c','#e67e22','#f39c12','#6c5ce7','#3498db','#00b894','#636e72','#b2bec3'],
+      borderRadius: 6,
+      barThickness: 28,
+    },{
+      label: '2025全年',
+      data: [58, 48, 56, 44, 12, 8, 19, 14],
+      backgroundColor: '#dfe6e9',
+      borderRadius: 6,
+      barThickness: 28,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { usePointStyle: true, padding: 24 } },
+      tooltip: {
+        callbacks: {
+          label: ctx => ctx.dataset.label + ': ' + ctx.raw + ' 件'
+        }
+      }
+    },
+    scales: {
+      y: { beginAtZero: true, title: { display: true, text: '案例数' }, grid: { color: '#f0f0f0' } },
+      x: { ticks: { font: { size: 10 } } }
+    }
+  }
+});
+
+// 月度趋势
+new Chart(document.getElementById('chartMonthly'), {
+  type: 'line',
+  data: {
+    labels: ['2025-09','2025-10','2025-11','2025-12','2026-01','2026-02','2026-03','2026-04'],
+    datasets: [{
+      label: '纪律处分',
+      data: [9, 9, 15, 27, 3, 10, 1, 25],
+      borderColor: '#e74c3c',
+      backgroundColor: 'rgba(231,76,60,0.08)',
+      fill: true,
+      tension: 0.4,
+      pointRadius: 5,
+      pointBackgroundColor: '#e74c3c',
+    },{
+      label: '异常经营',
+      data: [2, 5, 1, 2, 2, 1, 0, 4],
+      borderColor: '#f39c12',
+      backgroundColor: 'transparent',
+      tension: 0.4,
+      pointRadius: 4,
+      pointBackgroundColor: '#f39c12',
+    },{
+      label: '失联机构',
+      data: [1, 0, 0, 2, 0, 0, 0, 9],
+      borderColor: '#636e72',
+      borderDash: [5,5],
+      backgroundColor: 'transparent',
+      tension: 0.4,
+      pointRadius: 4,
+      pointBackgroundColor: '#636e72',
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { usePointStyle: true, padding: 24 } },
+    },
+    scales: {
+      y: { beginAtZero: true, title: { display: true, text: '机构数' }, grid: { color: '#f0f0f0' } },
+    }
+  }
+});
+
+// 年度趋势
+new Chart(document.getElementById('chartYearly'), {
+  type: 'bar',
+  data: {
+    labels: ['2019','2020','2021','2022','2023','2024','2025','2026(1-5月)'],
+    datasets: [{
+      label: '纪律处分',
+      data: [4, 8, 40, 30, 87, 98, 67, 40],
+      backgroundColor: '#e74c3c',
+      borderRadius: 4,
+      barPercentage: 0.6,
+    },{
+      label: '异常经营',
+      data: [53, 3, 59, 65, 59, 35, 34, 14],
+      backgroundColor: '#f39c12',
+      borderRadius: 4,
+      barPercentage: 0.6,
+    },{
+      label: '失联机构',
+      data: [195, 16, 6, 8, 19, 15, 45, 20],
+      backgroundColor: '#636e72',
+      borderRadius: 4,
+      barPercentage: 0.6,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { usePointStyle: true, padding: 24 } },
+    },
+    scales: {
+      y: { beginAtZero: true, title: { display: true, text: '机构数' }, grid: { color: '#f0f0f0' } },
+    }
+  }
+});
+</script>
+</body>
+</html>

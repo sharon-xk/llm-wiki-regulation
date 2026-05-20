@@ -116,7 +116,7 @@ def is_index_record(rec):
 # ── entity page builders ─────────────────────────────────────────────
 
 def build_jlcf_entity(name, records, subtype, subject_info=None):
-    """构建纪律处分 entity 页面"""
+    """构建纪律处分 entity 页面（统一模版）"""
     records.sort(key=lambda x: x['date'], reverse=True)
     first_incident = records[-1]['date'][:7] if records else ''
     latest_incident = records[0]['date'][:7] if records else ''
@@ -127,46 +127,58 @@ def build_jlcf_entity(name, records, subtype, subject_info=None):
         f"source_count: {len(records)}",
         f"first_incident: {first_incident}", f"latest_incident: {latest_incident}",
     ]
-    if info.get('gender'): fm_parts.append(f"gender: {info['gender']}")
-    if info.get('birth_date'): fm_parts.append(f"birth_date: {info['birth_date']}")
-    if info.get('position'): fm_parts.append(f"position: {info['position']}")
-    if info.get('org'): fm_parts.append(f"org: {info['org']}")
-    if info.get('abbreviation'): fm_parts.append(f"abbreviation: {info['abbreviation']}")
+    if info.get('abbreviation'): fm_parts.append(f"short_name: {info['abbreviation']}")
     fm_parts.append("tags: [纪律处分]")
     fm = "---\n" + "\n".join(fm_parts) + "\n---\n"
 
-    body = f"""## 基本信息
-
-- **名称**: {name}
-"""
+    # ── 基本信息 ──
+    body = f"## 基本信息\n\n- **名称**: {name}\n"
     if info.get('abbreviation'): body += f"- **简称**: {info['abbreviation']}\n"
-    if info.get('gender'): body += f"- **性别**: {info['gender']}\n"
-    if info.get('birth_date'): body += f"- **出生日期**: {info['birth_date']}\n"
-    if info.get('position'): body += f"- **职务**: {info['position']}\n"
-    if info.get('org'): body += f"- **任职机构**: {info['org']}\n"
-    body += f"- **类型**: {subtype}\n- **首次处罚**: {first_incident}\n- **最近处罚**: {latest_incident}\n"
+    body += f"- **类型**: {subtype}\n"
+    if first_incident:
+        body += f"- **首次处罚**: {first_incident}\n"
+        body += f"- **最近处罚**: {latest_incident}\n"
 
-    content = fm + "\n" + body + "\n## 处罚记录\n\n"
+    # ── 处罚记录 ──
+    body += "\n## 处罚记录\n"
     for i, rec in enumerate(records):
-        content += f"### 案件 {i+1}\n\n"
-        if rec.get('case_num'): content += f"- **字号**: {rec['case_num']}\n"
-        content += f"- **日期**: {rec['date']}\n- **来源**: {rec['source']}\n"
-        if rec.get('violations'): content += f"- **违规行为**: {'; '.join(rec['violations'][:3])}\n"
-        if rec.get('measures'): content += f"- **处罚措施**: {'; '.join(rec['measures'][:3])}\n"
-        content += "\n"
+        body += f"\n### 案件 {i+1}\n\n"
+        if rec.get('case_num'): body += f"- **字号**: {rec['case_num']}\n"
+        body += f"- **日期**: {rec['date']}\n"
+        body += f"- **来源**: {rec['source']}\n"
 
+        # 违规行为：完整编号列表
+        violations = rec.get('violations', [])
+        if violations:
+            body += "\n**违规行为**:\n\n"
+            for j, v_text in enumerate(violations):
+                clean = re.sub(r'\s+', ' ', v_text).strip()
+                body += f"{j+1}. {clean}\n"
+            body += "\n"
+
+        # 违反行为对应的概念页：create 阶段留占位，update 阶段填充
+        body += "**违规行为对应的概念页**:\n\n*待映射*\n\n"
+
+        # 处罚措施
+        measures = rec.get('measures', [])
+        if measures:
+            body += f"- **处罚措施**: {'; '.join(measures)}\n"
+
+        # 法规依据
+        if rec.get('legal_basis'):
+            body += f"- **法规依据**: {rec['legal_basis']}\n"
+
+    # ── 违规类型汇总 ──
+    body += "\n## 违规类型汇总\n\n"
     all_violations = []
     for rec in records:
         all_violations.extend(rec.get('violations', []))
     if all_violations:
-        content += "## 违规类型汇总\n\n"
-        seen = set()
-        for v in all_violations:
-            if v and v not in seen:
-                seen.add(v)
-                content += f"- {v}\n"
+        body += "*待映射*\n"
+    else:
+        body += "- *暂无*\n"
 
-    return fm + "\n" + body + "\n\n" + content.split('\n', 1)[1] if '\n' in content else content
+    return fm + "\n" + body
 
 
 def build_html_entity(name, records, module_type):

@@ -110,9 +110,7 @@ def build_body(parsed, existing_fm):
         lines.append('')
         for i, v_text in enumerate(violations):
             clean = re.sub(r'\s+', ' ', v_text).strip()
-            # Truncate for readability
-            display = truncate_text(clean, 300)
-            lines.append(f'{i + 1}. {display}')
+            lines.append(f'{i + 1}. {clean}')
             lines.append('')
 
         # 违规行为对应的概念页

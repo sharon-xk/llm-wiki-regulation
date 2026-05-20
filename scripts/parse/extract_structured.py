@@ -87,7 +87,7 @@ def extract_penalty(text):
             penalty = re.sub(r'\s+', ' ', penalty)
             penalty = re.sub(r'\d+\s*$', '', penalty).strip()
             if len(penalty) > 2:
-                return penalty[:200]  # Limit length
+                return penalty
     return ""
 
 

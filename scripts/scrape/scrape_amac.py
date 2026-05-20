@@ -47,24 +47,57 @@ def extract_text_from_pdf(pdf_path):
     return None
 
 def ocr_pdf(pdf_path):
-    """OCR 扫描版 PDF"""
+    """OCR 扫描版 PDF（全页 300 DPI）"""
+    import tempfile
     try:
-        img_path = pdf_path.with_suffix(".png")
-        subprocess.run(
-            ["pdftoppm", "-png", "-singlefile", "-r", "200", str(pdf_path), str(pdf_path.with_suffix(""))],
-            capture_output=True, timeout=60
-        )
-        if not img_path.exists():
-            return None
+        # 获取 PDF 页数
+        pages = 1
+        try:
+            result = subprocess.run(
+                ["pdfinfo", str(pdf_path)], capture_output=True, text=True, timeout=10
+            )
+            for line in result.stdout.split("\n"):
+                if line.startswith("Pages:"):
+                    pages = int(line.strip().split(":")[1].strip())
+                    break
+        except Exception:
+            pass
 
-        txt_path = pdf_path.with_suffix(".ocr.txt")
-        r = subprocess.run(
-            ["tesseract", str(img_path), str(txt_path.with_suffix("")), "-l", "chi_sim"],
-            capture_output=True, text=True, timeout=120
-        )
-        if txt_path.exists():
-            text = txt_path.read_text(encoding="utf-8")
-            img_path.unlink(missing_ok=True)
+        # 转图片（所有页，300 DPI）
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            subprocess.run(
+                ["pdftoppm", "-png", "-r", "300", str(pdf_path),
+                 f"{tmp_dir}/page"],
+                capture_output=True, timeout=180
+            )
+
+            # OCR 每页
+            full_text = []
+            for p in range(1, pages + 1):
+                img_file = f"{tmp_dir}/page-{p}.png"
+                txt_file = f"{tmp_dir}/page-{p}"
+                if os.path.exists(img_file):
+                    subprocess.run(
+                        ["tesseract", img_file, txt_file, "-l", "chi_sim"],
+                        capture_output=True, text=True, timeout=120
+                    )
+                    ocr_out = txt_file + ".txt"
+                    if os.path.exists(ocr_out):
+                        with open(ocr_out, 'r') as f:
+                            full_text.append(f.read())
+
+            if not full_text:
+                return None
+
+            text = "\n".join(full_text)
+
+            # OCR 后处理纠正
+            from scripts.ocr.fix_ocr import fix_ocr_text
+            text = fix_ocr_text(text)
+
+            # 写入 .ocr.txt
+            ocr_txt_path = pdf_path.with_suffix(".ocr.txt")
+            ocr_txt_path.write_text(text, encoding="utf-8")
             return text
     except Exception as e:
         print(f"    OCR 失败: {e}")
@@ -102,7 +135,11 @@ def get_all_links():
     all_links = {}
 
     async def run():
-        browser = await launch(headless=True, args=['--no-sandbox', '--disable-setuid-sandbox'])
+        browser = await launch(
+            headless=True,
+            executablePath='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+            args=['--no-sandbox', '--disable-setuid-sandbox']
+        )
 
         for key, base_url, pattern, ext in modules:
             print(f"\n=== {key} ===")
@@ -226,7 +263,7 @@ def main():
 
     if not all_links:
         print("获取链接失败")
-        return
+        sys.exit(1)
 
     # 按日期过滤（增量模式）
     if since:

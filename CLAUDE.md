@@ -1,4 +1,10 @@
-# 【最高优先级】Python代码执行强制规则
+# CLAUDE.md — 金融监管处罚知识库
+
+> **项目概况和数据统计**见 [README.md](README.md)。
+> **脚本目录结构和使用说明**见 [scripts/README.md](scripts/README.md)。
+
+## 【最高优先级】Python 代码执行强制规则
+
 1. 绝对禁止使用：python -c、python3 -c 任何形式的命令行内联执行代码！
 2. 所有Python代码，必须先写入完整的.py脚本文件，不允许任何临时单行执行。
 3. 项目脚本放在/scripts路径下并及时更新。如果是临时一次性执行的检查语句，脚本放在/scripts/tmp下再执行，执行完之后可删除。
@@ -6,31 +12,20 @@
 5. 标准执行流程：创建/编辑py文件 → 写入完整代码 → 执行文件脚本
 6. 禁止任何交互式、内联式、临时式Python代码执行，无任何例外
 
-# CLAUDE.md — 金融监管处罚知识库
-
 ## 概述
 
 这是一个用于收集、整理和查询中国证券投资基金业协会（AMAC）自律管理处罚信息的知识库。
 团队成员通过自然语言提问，LLM 负责维护 wiki 并生成答案。
 
-## 数据来源
-
-- **网站**：https://www.amac.org.cn/zlgl/
-- **子模块**：
-  - 纪律处分-机构：https://www.amac.org.cn/zlgl/jlcf/scfjg/
-  - 异常经营：https://www.amac.org.cn/zlgl/ycjy/ycjyjgclgg/
-  - 失联机构：https://www.amac.org.cn/zlgl/sljg/sljgclgg/
-  - 自律措施：https://www.amac.org.cn/zlgl/zlcs/
-- **原文存储**：`raw/` 目录下，按模块分类存放爬取的原始页面
-
 ## 目录结构
 
 ```
 llm-wiki-regulation/
-├── CLAUDE.md           # 本文件，schema 定义
+├── CLAUDE.md           # 本文件，AI 操作规范
+├── README.md            # 项目首页，数据概况
 ├── index.md            # 知识库总索引（LLM 维护）
 ├── log.md              # 操作日志
-├── scripts/            # 处理脚本
+├── scripts/            # 处理脚本（详见 scripts/README.md）
 ├── raw/                # 原始来源（不可修改）
 │   ├── 纪律处分/
 │   ├── 异常经营/
@@ -40,6 +35,7 @@ llm-wiki-regulation/
     ├── entities/       # 市场主体（机构/个人）
     ├── modules/        # 按模块分类的处罚记录
     ├── concepts/       # 违规类型、概念定义
+    ├── regulations/    # 涉及法规
     └── analysis/       # 分析、对比、趋势页面
 ```
 
@@ -84,7 +80,7 @@ llm-wiki-regulation/
   tags: [信息披露违规, 未按规定登记备案]
   ---
   ```
-- **法规名映射表**：`scripts/reg_name_map.json`，格式 `{"OCR变体/简称": "标准全称"}`，供程序归一化读取，人工维护
+- **法规名映射表**：`scripts/config/reg_name_map.json`，格式 `{"OCR变体/简称": "标准全称"}`，供程序归一化读取，人工维护
 
 ### 分析页 (analysis/)
 - **命名**：`分析_主题.md`（如 `分析_2024年处罚趋势.md`）
@@ -136,7 +132,7 @@ llm-wiki-regulation/
 随机抽 10-15 个 entity，比对原始文件与 entity 页的日期、字号、处罚措施。通过率 < 90% 视为不合格。
 
 **5. 校验输出**
-上述检查整合到 `scripts/validate_ingest.py`。校验结果、解析失败的 entity 清单（原始文本 < 40 行、OCR 无有效输出、有字号无违规行为）一并写入 `log.md`。
+上述检查整合到 `scripts/qualify/validate.py`。校验结果、解析失败的 entity 清单（原始文本 < 40 行、OCR 无有效输出、有字号无违规行为）一并写入 `log.md`。
 
 ### Query（查询）流程
 

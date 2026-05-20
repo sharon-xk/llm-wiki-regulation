@@ -30,7 +30,7 @@ def extract_complete_violations(content):
             # 清理：去除多余空白，限制长度
             text = re.sub(r'\s+', ' ', m).strip()
             if len(text) > 10:
-                violations.append(text[:500])  # 完整内容但限制长度
+                violations.append(text)  # 保留完整内容
 
     # 如果没找到， fallback到行内匹配
     if not violations:
@@ -38,7 +38,7 @@ def extract_complete_violations(content):
             line = line.strip()
             if any(kw in line for kw in ['未尽', '违反', '违规', '存在以下']):
                 if len(line) > 15:
-                    violations.append(line[:300])
+                    violations.append(line)
 
     return violations[:5]  # 最多5条
 
@@ -58,7 +58,7 @@ def extract_complete_measures(content):
         for m in matches:
             text = re.sub(r'\s+', ' ', m).strip()
             if len(text) > 5:
-                measures.append(text[:200])
+                measures.append(text)
 
     # Fallback: 行内匹配
     if not measures:
@@ -66,7 +66,7 @@ def extract_complete_measures(content):
             line = line.strip()
             if any(kw in line for kw in ['警告', '罚款', '取消资格', '撤销登记', '责令改正', '公开谴责', '暂停', '停止']):
                 if len(line) > 5:
-                    measures.append(line[:150])
+                    measures.append(line)
 
     return measures[:5]
 
@@ -215,20 +215,20 @@ def main():
     jlcf_jg = process_directory(base_dir / '纪律处分/机构', '纪律处分-机构')
     jlcf_jg_count = sum(len(v) for v in jlcf_jg.values())
 
-    # 处理纪律处分/人员
-    jlcf_ry = process_directory(base_dir / '纪律处分/人员', '纪律处分-人员')
-    jlcf_ry_count = sum(len(v) for v in jlcf_ry.values())
+    # 处理纪律处分/人员 — 已禁用，人名不纳入知识库
+    # jlcf_ry = process_directory(base_dir / '纪律处分/人员', '纪律处分-人员')
+    # jlcf_ry_count = sum(len(v) for v in jlcf_ry.values())
 
     # 合并结果
     all_entities = {
         '纪律处分_机构': dict(jlcf_jg),
-        '纪律处分_人员': dict(jlcf_ry)
+        # '纪律处分_人员': dict(jlcf_ry)
     }
 
     # 统计
     print('\n=== 统计 ===')
     print(f'纪律处分-机构: {len(jlcf_jg)} 个实体, {jlcf_jg_count} 条记录')
-    print(f'纪律处分-人员: {len(jlcf_ry)} 个实体, {jlcf_ry_count} 条记录')
+    # print(f'纪律处分-人员: {len(jlcf_ry)} 个实体, {jlcf_ry_count} 条记录')
 
     # 保存结果
     output_file = base_dir / 'parsed_txt_results.json'
@@ -239,7 +239,7 @@ def main():
 
     # 输出示例
     print('\n=== 示例实体 ===')
-    for module, entities in [('机构', jlcf_jg), ('人员', jlcf_ry)]:
+    for module, entities in [('机构', jlcf_jg)]:
         if entities:
             name = list(entities.keys())[0]
         info = list(entities.values())[0][0]
