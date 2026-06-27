@@ -1,0 +1,180 @@
+{
+    "version": 2,
+    "description": "基金业协会处罚知识库结构契约。定义页面类型、字段 schema、创建规则与模板。LLM 生成页面须遵循此契约，validate.py 据此校验。",
+    "layers": {
+        "fact": "客观事实层：来源于监管文书的结构化数据，可追溯、可校验",
+        "experience": "分析洞察层：基于 fact 层的统计、趋势、风险研判",
+        "planned": "规划中类型：已定义 schema 与模板，待数据接入后启用"
+    },
+    "pageTypes": {
+        "institution": {
+            "label": "机构",
+            "description": "被监管/处罚的法人机构（基金管理人、证券公司等）。",
+            "layer": "fact",
+            "dir": "wiki/institutions/",
+            "naming": "机构全名.md，去掉「以下简称xxx」及公文前缀。同名加后缀区分。",
+            "schema": {
+                "type": {"type": "const", "value": "institution", "required": true},
+                "name": {"type": "string", "required": true, "note": "完整公司名，无简称/前缀"},
+                "subtype": {"type": "enum", "value": ["私募基金管理人", "证券公司", "公募基金公司", "期货公司", "证券投资咨询机构", "基金托管机构", "证券服务机构"], "required": true, "note": "当前数据全部为私募基金管理人；扩展证监会数据后启用其它值"},
+                "source": {"type": "enum", "value": ["AMAC", "证监会", "交易所"], "required": true, "note": "监管主体，区分数据来源体系"},
+                "source_count": {"type": "number", "required": true, "note": "该机构被处罚/记录的总次数"},
+                "first_incident": {"type": "date", "required": true, "format": "YYYY-MM"},
+                "latest_incident": {"type": "date", "required": true, "format": "YYYY-MM"},
+                "tags": {"type": "array", "items": {"type": "enum", "value": ["纪律处分", "异常经营", "失联机构", "自律措施"]}, "required": true, "note": "来源栏目，支持多个"}
+            },
+            "route": null,
+            "create": "name 提取要干净：去掉「以下简称xxx」、公文前缀（如「协会已公告」「已将」）、OCR 全角括号噪声。正文必须包含：基本信息、处罚记录（每案含字号/日期/来源文件/违规行为/违规行为对应的 violation 链接/处罚措施/法规依据）、违规类型汇总（violation 链接）。",
+            "merge": "合并同名机构主体及处罚案件。若主体名称（name）因 OCR 处理产生错别字（如「稻满/稻暮」「常青藤/常青苹」「黑央中盛/黑岩中盛」），应合并为同一主体，保留正确名称、归并所有案件。",
+            "template": {
+                "key": "institution",
+                "markdown": "## 基本信息\n\n- **名称**: {{name}}\n- **类型**: {{subtype}}\n- **来源**: {{source}}\n- **首次处罚**: {{first_incident}}\n- **最近处罚**: {{latest_incident}}\n- **字号**: {{最新案件字号}}\n\n## 处罚记录\n\n### 案件 1\n\n- **字号**: \n- **日期**: \n- **来源**: \n\n**违规行为**: \n\n**违规行为对应的违规类型**: \n\n- **处罚措施**: \n- **法规依据**: \n\n## 违规类型汇总\n\n- [违规类型名](violations/违规类型名.md)"
+            }
+        },
+        "person": {
+            "label": "人员",
+            "description": "被监管/处罚的自然人（基金经理、高管、从业人员等）。",
+            "layer": "planned",
+            "dir": "wiki/persons/",
+            "naming": "姓名.md。同名人员加机构后缀区分，如「张三_XX基金.md」。",
+            "schema": {
+                "type": {"type": "const", "value": "person", "required": true},
+                "name": {"type": "string", "required": true},
+                "gender": {"type": "enum", "value": ["男", "女"], "required": false},
+                "org": {"type": "link", "target": "institution", "required": true, "note": "关联机构，链接到 institutions/"},
+                "position": {"type": "enum", "value": ["法定代表人", "总经理", "副总经理", "基金经理", "合规负责人", "执行事务合伙人", "其它高管", "从业人员"], "required": true},
+                "qualification_no": {"type": "string", "required": false, "note": "基金从业资格号（如有）"},
+                "source": {"type": "enum", "value": ["AMAC", "证监会", "交易所"], "required": true},
+                "source_count": {"type": "number", "required": true},
+                "first_incident": {"type": "date", "required": true, "format": "YYYY-MM"},
+                "latest_incident": {"type": "date", "required": true, "format": "YYYY-MM"},
+                "tags": {"type": "array", "items": {"type": "enum", "value": ["纪律处分", "自律措施"]}, "required": true}
+            },
+            "route": null,
+            "create": "正文必须包含：基本信息（姓名/职务/关联机构/资格号）、处罚记录（同 institution 结构）、违规类型汇总。人员页通过 org 字段双向链接到所属机构。",
+            "merge": "合并同名人员。同名同机构视为同一人；跨机构同名需加后缀区分。",
+            "template": {
+                "key": "person",
+                "markdown": "## 基本信息\n\n- **姓名**: {{name}}\n- **职务**: {{position}} @ [{{org}}](../institutions/{{org}}.md)\n- **从业资格号**: {{qualification_no}}\n- **首次处罚**: {{first_incident}}\n- **最近处罚**: {{latest_incident}}\n\n## 处罚记录\n\n### 案件 1\n\n- **字号**: \n- **日期**: \n- **来源**: \n- **违规行为**: \n- **处罚措施**: \n\n## 违规类型汇总\n\n- [违规类型名](../violations/违规类型名.md)"
+            }
+        },
+        "product": {
+            "label": "产品",
+            "description": "金融产品类型（违规发生的载体），按管理人类型分类。",
+            "layer": "planned",
+            "dir": "wiki/products/",
+            "naming": "产品类型名.md，如「证券公司集合资管计划.md」。",
+            "schema": {
+                "type": {"type": "const", "value": "product", "required": true},
+                "name": {"type": "string", "required": true},
+                "manager_type": {"type": "link", "target": "institution.subtype", "required": true, "note": "对齐机构分类，建立 product↔institution 桥"},
+                "product_form": {"type": "enum", "value": ["集合", "定向", "契约型", "其它"], "required": true},
+                "legal_basis": {"type": "array", "items": {"type": "link", "target": "regulation"}, "required": true},
+                "typical_concepts": {"type": "array", "items": {"type": "link", "target": "violation"}, "required": true, "note": "该产品类型的易发违规"},
+                "last_updated": {"type": "date", "required": true}
+            },
+            "route": null,
+            "create": "正文必须包含：产品定义（是什么/成立依据/特征）、运作模式（募集/投资范围/份额结构）、监管框架（regulation 链接）、易发违规类型（violation 链接）、典型案例（待证监会数据接入后填充 institution 链接）。",
+            "merge": "历史承接关系的产品需合并并标注沿革。如「证券公司直投基金」并入「证券公司私募投资基金」，注释适用时期。",
+            "template": {
+                "key": "product",
+                "markdown": "## 产品定义\n\n（这类产品是什么、成立依据、基本特征）\n\n## 运作模式\n\n（资金募集、投资范围、份额结构）\n\n## 监管框架\n\n- [法规名](../regulations/法规名.md)\n\n## 易发违规类型\n\n- [违规类型名](../violations/违规类型名.md) — 说明这类产品为何高发\n\n## 典型案例\n\n（待证监会数据接入后填充，链接到 institutions/）"
+            }
+        },
+        "violation": {
+            "label": "违规类型",
+            "description": "违规行为的抽象类型（如违规募集、信息披露违规）。",
+            "layer": "fact",
+            "dir": "wiki/violations/",
+            "naming": "违规类型名.md，如「违规募集.md」。",
+            "schema": {
+                "type": {"type": "const", "value": "violation", "required": true},
+                "name": {"type": "string", "required": true},
+                "description": {"type": "string", "required": true},
+                "case_count": {"type": "number", "required": true, "note": "涉及该违规类型的案例总数"},
+                "tags": {"type": "array", "items": {"type": "enum", "value": ["违规类型", "纪律处分", "异常经营", "失联机构"]}, "required": true},
+                "last_updated": {"type": "date", "required": true}
+            },
+            "route": null,
+            "create": "正文必须包含：概述、时间分布（按年统计）、典型案例（最多展示约30个，含日期/字号/违规行为/institution 链接）、违规构成要件、处罚依据（regulation 链接）、处罚措施（区分机构/个人）。",
+            "merge": "合并语义相同的违规类型。如「委托无资格机构募集」归入「违规募集」。",
+            "template": {
+                "key": "violation",
+                "markdown": "## 概述\n\n本违规类型页收录 **{{case_count}}** 个涉及「{{name}}」的主体案例。\n\n## 时间分布\n\n- YYYY年：N个案例\n\n## 典型案例\n\n### 1. [机构名](/wiki/institutions/机构名.md)\n\n- **日期**：\n- **字号**：\n- **违规行为**：\n\n## 违规构成要件\n\n一般包括：\n1. 违规主体（机构或个人）\n2. 违规行为的具体表现\n3. 主观过错（如故意或过失）\n4. 损害后果\n\n## 处罚依据\n\n- [法规名](../regulations/法规名.md)\n\n## 处罚措施\n\n常见的处罚措施包括：\n- **机构**：警告、罚款、责令改正、公开谴责、取消会员资格、撤销登记等\n- **个人**：警告、罚款、取消基金从业资格、加入黑名单等"
+            }
+        },
+        "regulation": {
+            "label": "法规",
+            "description": "处罚文书中引用的监管法规。",
+            "layer": "fact",
+            "dir": "wiki/regulations/",
+            "naming": "法规全名.md。",
+            "schema": {
+                "type": {"type": "const", "value": "regulation", "required": true},
+                "name": {"type": "string", "required": true, "note": "法规全名"},
+                "short_name": {"type": "string", "required": false, "note": "简称，如「私募基金监管办法」"},
+                "issuing_body": {"type": "string", "required": true, "note": "颁布机构，如「中国证监会」"},
+                "effective_date": {"type": "date", "required": true},
+                "cited_count": {"type": "number", "required": true, "note": "被处罚文书引用的总次数"},
+                "tags": {"type": "array", "items": {"type": "link", "target": "violation"}, "required": true, "note": "关联的违规类型（修正原 Profile：原为 string，应为 violation 数组）"}
+            },
+            "route": null,
+            "create": "正文必须包含：概述（基本介绍/适用范围）、关联违规类型（violation 链接 + 引用次数）、高频条款（条款名 + 引用次数 + 关联 violation）、典型案例（institution 链接）。",
+            "merge": "同一法规的不同版本/修订需合并并标注修订沿革。",
+            "template": {
+                "key": "regulation",
+                "markdown": "## 概述\n\n法规的基本介绍和适用范围。\n\n## 关联违规类型\n\n- [违规类型名](../violations/违规类型名.md) — N 次引用\n\n## 高频条款\n\n### 第X条（条款简述）\n\n- 引用次数：N\n- 关联违规：[违规类型](../violations/违规类型.md)\n\n## 典型案例\n\n- [机构名](../institutions/机构名.md)"
+            }
+        },
+        "analysis": {
+            "label": "分析",
+            "description": "基于 fact 层数据的统计、趋势、风险研判。",
+            "layer": "experience",
+            "dir": "wiki/analysis/",
+            "naming": "分析_标题.md，如「分析_年度趋势.md」。",
+            "schema": {
+                "type": {"type": "const", "value": "analysis", "required": true},
+                "name": {"type": "string", "required": true, "note": "分析标题"},
+                "description": {"type": "string", "required": true, "note": "分析范围/口径说明"},
+                "date": {"type": "date", "required": true, "note": "数据截止/生成日期"},
+                "tags": {"type": "array", "items": {"type": "string"}, "required": true, "note": "如 [分析, 趋势, 年度统计]"},
+                "data_source": {"type": "array", "items": {"type": "enum", "value": ["纪律处分", "异常经营", "失联机构", "自律措施"]}, "required": true, "note": "本分析覆盖的数据来源栏目"}
+            },
+            "route": null,
+            "create": "正文必须包含：分析说明（口径/数据范围/统计方法）、数据表格（年度统计、违规类型分布等）、分析结论、数据更新日期。所有结论须可回溯到 fact 层数据，不得编造。",
+            "merge": null,
+            "template": {
+                "key": "analysis",
+                "markdown": "## 分析说明\n\n- 数据范围：{{data_source}}\n- 统计口径：\n- 数据更新日期：{{date}}\n\n## 数据统计\n\n| 年份 | 机构数 |\n|------|--------|\n| YYYY | N |\n\n## 分析结论\n\n- 结论 1\n\n---\n*数据更新日期：{{date}}*"
+            }
+        }
+    },
+    "fallbackType": "institution",
+    "allowAdditionalFields": true,
+    "linkConvention": {
+        "institution_to_violation": "机构页「违规行为对应的违规类型」段落 → violations/",
+        "violation_to_institution": "违规类型页「典型案例」段落 → institutions/",
+        "regulation_to_violation": "法规页「关联违规类型」「高频条款」段落 → violations/",
+        "regulation_to_institution": "法规页「典型案例」段落 → institutions/",
+        "person_to_institution": "人员页 org 字段 + 正文「职务 @ 机构」→ institutions/",
+        "product_to_institution": "产品页 manager_type 字段 → institutions/(按 subtype 桥接)",
+        "product_to_violation": "产品页 typical_concepts 字段 → violations/",
+        "product_to_regulation": "产品页 legal_basis 字段 → regulations/"
+    },
+    "changelog": {
+        "v2_changes": [
+            "类型对齐：删除 module（已废弃）、organization→institution、concept→violation",
+            "新增类型：person（planned 层）、product（planned 层）",
+            "schema 修复：institution 加 source（监管主体）字段",
+            "schema 修复：regulation.tags 由 string 改为 violation 链接数组",
+            "schema 修复：analysis 补完整 schema（原为空 {}）",
+            "路径对齐：所有模板链接 entities/→institutions/、concepts/→violations/",
+            "新增 linkConvention：明确定义六类节点间的双向链接规范"
+        ],
+        "v1_to_v2_renamed": {
+            "organization": "institution",
+            "concept": "violation",
+            "module": "(已删除)"
+        }
+    }
+}
