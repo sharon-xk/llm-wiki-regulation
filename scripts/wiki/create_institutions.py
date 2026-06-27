@@ -12,7 +12,7 @@ from datetime import date
 BASE_DIR = Path(__file__).parent.parent.parent
 RAW_DIR = BASE_DIR / "raw"
 WIKI_DIR = BASE_DIR / "wiki"
-ENTITIES_DIR = WIKI_DIR / "entities"
+ENTITIES_DIR = WIKI_DIR / "institutions"
 MODULES_DIR = WIKI_DIR / "modules"
 
 
@@ -255,7 +255,7 @@ def main():
     ENTITIES_DIR.mkdir(parents=True, exist_ok=True)
 
     # ─── 1. 纪律处分 (parsed_txt_results.json) ───
-    txt_path = RAW_DIR / 'parsed_txt_results.json'
+    txt_path = RAW_DIR / 'parsed' / 'parsed_txt_results.json'
     if txt_path.exists():
         with open(txt_path, 'r', encoding='utf-8') as f:
             txt_data = json.load(f)
@@ -279,7 +279,7 @@ def main():
         print(f"纪律处分 entity: {created}")
 
     # ─── 2. 异常经营 / 失联机构 (parsed_html_results.json) ───
-    html_path = RAW_DIR / 'parsed_html_results.json'
+    html_path = RAW_DIR / 'parsed' / 'parsed_html_results.json'
     if html_path.exists():
         with open(html_path, 'r', encoding='utf-8') as f:
             html_data = json.load(f)

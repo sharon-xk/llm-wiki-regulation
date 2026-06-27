@@ -12,8 +12,9 @@ WIKI_DIR = BASE_DIR / "wiki"
 
 
 def update_index():
-    entities = sorted((WIKI_DIR / "entities").glob("*.md"))
-    concepts = sorted((WIKI_DIR / "concepts").glob("*.md"))
+    institutions = sorted((WIKI_DIR / "institutions").glob("*.md"))
+    persons = sorted((WIKI_DIR / "persons").glob("*.md"))
+    violations = sorted((WIKI_DIR / "violations").glob("*.md"))
     analysis = sorted((WIKI_DIR / "analysis").glob("*.md"))
 
     content = f"""# 基金业协会处罚知识库
@@ -22,24 +23,21 @@ def update_index():
 
 ---
 
-## 实体 (entities)
+## 机构 (institutions)
 
-- 共 {len(entities)} 个实体
+- 共 {len(institutions)} 个机构（来源：AMAC）
 
-## 模块 (modules)
+## 人员 (persons)
 
-- [纪律处分](wiki/modules/纪律处分.md) — 纪律处分决定书
-- [异常经营](wiki/modules/异常经营.md) — 异常经营私募基金管理人
-- [失联机构](wiki/modules/失联机构.md) — 失联私募基金管理人
-<!-- - [自律措施](wiki/modules/自律措施.md) — 自律措施（数据停更于2020年）-->
+- 共 {len(persons)} 个人员
 
-## 概念 (concepts)
+## 违规类型 (violations)
 
 """
-    for f in concepts[:20]:
-        content += f"- [{f.stem}](wiki/concepts/{f.stem}.md)\n"
-    if len(concepts) > 20:
-        content += f"\n... 还有 {len(concepts) - 20} 个概念页\n"
+    for f in violations[:20]:
+        content += f"- [{f.stem}](wiki/violations/{f.stem}.md)\n"
+    if len(violations) > 20:
+        content += f"\n... 还有 {len(violations) - 20} 个违规类型页\n"
 
     content += "\n## 分析 (analysis)\n\n"
     for f in analysis:
@@ -47,7 +45,7 @@ def update_index():
 
     content += f"\n---\n*最后更新：{date.today().isoformat()}*\n"
     (BASE_DIR / "index.md").write_text(content, encoding="utf-8")
-    print(f"index.md 已更新 ({len(entities)} entities, {len(concepts)} concepts, {len(analysis)} analyses)")
+    print(f"index.md 已更新 ({len(institutions)} institutions, {len(persons)} persons, {len(violations)} violations, {len(analysis)} analyses)")
 
 
 def update_log(description="全量更新"):

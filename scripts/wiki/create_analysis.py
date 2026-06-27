@@ -11,7 +11,7 @@ from datetime import date
 
 BASE_DIR = Path(__file__).parent.parent.parent
 ANALYSIS_DIR = BASE_DIR / "wiki" / "analysis"
-ENTITIES_DIR = BASE_DIR / "wiki" / "entities"
+ENTITIES_DIR = BASE_DIR / "wiki" / "institutions"
 
 
 def clean_html_name(name):
@@ -35,7 +35,7 @@ def clean_html_name(name):
 
 def entity_link(name):
     safe = re.sub(r'[\\/:*?"<>|;,\'"()（）【】〈〈〉、、\s\-—]', '', name)[:40]
-    return f'[{name}](/wiki/entities/{safe}.md)'
+    return f'[{name}](/wiki/institutions/{safe}.md)'
 
 
 def build_annual_trend(concept_cases, txt_data, html_data):
@@ -157,8 +157,8 @@ def main():
     ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
 
     parsed_path = BASE_DIR / "scripts" / "tmp" / "parsed_data_with_concepts.json"
-    html_path = BASE_DIR / "raw" / "parsed_html_results.json"
-    txt_path = BASE_DIR / "raw" / "parsed_txt_results.json"
+    html_path = BASE_DIR / "raw" / "parsed" / "parsed_html_results.json"
+    txt_path = BASE_DIR / "raw" / "parsed" / "parsed_txt_results.json"
 
     if not parsed_path.exists():
         print(f"数据文件不存在: {parsed_path}")

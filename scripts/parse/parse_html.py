@@ -107,7 +107,7 @@ def main():
         # '自律措施': zlcs_results,  # 数据停更于2020年
     }
 
-    output_file = base_dir / 'parsed_html_results.json'
+    output_file = base_dir / 'parsed' / 'parsed_html_results.json'
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 

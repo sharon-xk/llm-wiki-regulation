@@ -13,7 +13,7 @@ from multiprocessing import Pool
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent.parent.parent
-ENTITY_DIR = BASE_DIR / "wiki" / "entities"
+ENTITY_DIR = BASE_DIR / "wiki" / "institutions"
 RAW_BASE = BASE_DIR / "raw" / "纪律处分"
 TMP_BASE = Path(__file__).parent.parent / "tmp" / "ocr_batch"
 
@@ -40,8 +40,8 @@ def get_pdf_txt_pairs():
         else:
             subdir = '机构'
 
-        pdf_path = os.path.join(RAW_BASE, subdir, pdf_name)
-        txt_path = os.path.join(RAW_BASE, subdir, txt_name)
+        pdf_path = os.path.join(RAW_BASE, subdir, 'pdf', pdf_name)
+        txt_path = os.path.join(RAW_BASE, subdir, 'txt', txt_name)
 
         if os.path.exists(pdf_path):
             pairs.append((pdf_path, txt_path, fname))

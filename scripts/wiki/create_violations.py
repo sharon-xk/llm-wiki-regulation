@@ -10,7 +10,7 @@ from collections import defaultdict, Counter
 from datetime import date
 
 BASE_DIR = Path(__file__).parent.parent.parent
-CONCEPTS_DIR = BASE_DIR / "wiki" / "concepts"
+VIOLATIONS_DIR = BASE_DIR / "wiki" / "violations"
 
 CONCEPT_MAP = {
     '信息披露违规': '信息披露违规', '未按规定登记备案': '未按规定登记备案',
@@ -30,7 +30,7 @@ def clean_violation_text(text):
 
 def entity_link(name):
     safe = re.sub(r'[\\/:*?"<>|;,\'"()（）【】〈〈〉、、\s\-—]', '', name)[:40]
-    return f'[{name}](/wiki/entities/{safe}.md)'
+    return f'[{name}](/wiki/institutions/{safe}.md)'
 
 
 def build_concept_page(concept_name, cases):
@@ -44,7 +44,7 @@ def build_concept_page(concept_name, cases):
     case_count = len(entity_set)
 
     content = f"""---
-type: concept
+type: violation
 name: {concept_name}
 description: {concept_name}相关违规行为及处罚案例
 case_count: {case_count}
@@ -56,7 +56,7 @@ last_updated: {date.today().isoformat()}
 
 ## 概述
 
-本概念页收录 **{case_count}** 个涉及「{concept_name}」的主体案例。
+本违规类型页收录 **{case_count}** 个涉及「{concept_name}」的主体案例。
 
 ## 时间分布
 
@@ -99,12 +99,12 @@ last_updated: {date.today().isoformat()}
 
 
 def main():
-    CONCEPTS_DIR.mkdir(parents=True, exist_ok=True)
+    VIOLATIONS_DIR.mkdir(parents=True, exist_ok=True)
 
     data_path = BASE_DIR / "scripts" / "tmp" / "parsed_data_with_concepts.json"
     if not data_path.exists():
         print(f"数据文件不存在: {data_path}")
-        print("请先运行 wiki/concept_map.py 生成概念映射")
+        print("请先运行 wiki/concept_map.py 生成违规映射")
         return
 
     with open(data_path, 'r', encoding='utf-8') as f:
@@ -128,7 +128,7 @@ def main():
     created = 0
     for concept_name, cases in sorted(concept_cases.items()):
         if len(cases) < 2: continue
-        filepath = CONCEPTS_DIR / f"{concept_name}.md"
+        filepath = VIOLATIONS_DIR / f"{concept_name}.md"
         filepath.write_text(build_concept_page(concept_name, cases), encoding='utf-8')
         created += 1
         entity_ct = len(set(c['entity_name'] for c in cases))

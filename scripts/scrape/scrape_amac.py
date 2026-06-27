@@ -199,6 +199,12 @@ def process_module(module_key, links, subdir, ext):
 
     save_dir = OUTPUT_DIR / subdir
     os.makedirs(save_dir, exist_ok=True)
+    # PDF 模块：原始文件存入 pdf/，OCR 产物存入 txt/，分离原始数据与处理产物
+    pdf_dir = save_dir / "pdf"
+    txt_dir = save_dir / "txt"
+    if ext == '.pdf':
+        os.makedirs(pdf_dir, exist_ok=True)
+        os.makedirs(txt_dir, exist_ok=True)
 
     results = []
     for i, url in enumerate(links):
@@ -206,7 +212,9 @@ def process_module(module_key, links, subdir, ext):
         path = parsed.path
         filename = path.split('/')[-1]
         dir_prefix = path.split('/')[-2]
-        dest = save_dir / f"{dir_prefix}_{filename}"
+        # PDF 存入 pdf/ 子目录，HTML 仍存栏目目录
+        file_dir = pdf_dir if ext == '.pdf' else save_dir
+        dest = file_dir / f"{dir_prefix}_{filename}"
 
         print(f"\n  [{i+1}/{len(links)}] {filename[:50]}")
 
@@ -216,7 +224,7 @@ def process_module(module_key, links, subdir, ext):
                 # 尝试提取文本
                 text = extract_text_from_pdf(dest)
                 if text and len(text.strip()) > 50:
-                    txt_path = dest.with_suffix('.txt')
+                    txt_path = txt_dir / (dest.stem + '.txt')
                     txt_path.write_text(text, encoding='utf-8')
                     print(f"    [OK] pdftotext ({len(text)} 字)")
                     results.append({"status": "success", "file": str(dest)})
@@ -225,7 +233,7 @@ def process_module(module_key, links, subdir, ext):
                     print(f"    [无文字层，OCR...]")
                     text = ocr_pdf(dest)
                     if text and len(text.strip()) > 50:
-                        txt_path = dest.with_suffix('.txt')
+                        txt_path = txt_dir / (dest.stem + '.txt')
                         txt_path.write_text(text, encoding='utf-8')
                         print(f"    [OK] OCR ({len(text)} 字)")
                         results.append({"status": "success", "file": str(dest), "is_ocr": True})

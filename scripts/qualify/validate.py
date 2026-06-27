@@ -12,7 +12,7 @@ import random
 from pathlib import Path
 import random
 
-ENTITY_DIR = str(Path(__file__).parent.parent.parent / "wiki" / "entities")
+ENTITY_DIR = str(Path(__file__).parent.parent.parent / "wiki" / "institutions")
 PARSED = "/Users/sharon/ai-project/llm-wiki-regulation/scripts/tmp/parsed_data_with_concepts.json"
 
 
@@ -63,7 +63,7 @@ def check_entity(fname, parsed):
         vconcepts = parsed.get('violation_concepts', [])
         matched = sum(1 for vc in vconcepts if vc.get('concepts'))
         unmatched = sum(1 for vc in vconcepts if vc.get('needs_new'))
-        concept_links_in_file = len(re.findall(r'\[([^\]]+)\]\(/wiki/concepts/', content))
+        concept_links_in_file = len(re.findall(r'\[([^\]]+)\]\(/wiki/violations/', content))
         if matched > 0 and concept_links_in_file == 0:
             issues.append("概念页链接未写入")
 

@@ -2,7 +2,7 @@ import os
 import re
 from pathlib import Path
 
-entity_dir = str(Path(__file__).parent.parent.parent / "wiki" / "entities")
+entity_dir = str(Path(__file__).parent.parent.parent / "wiki" / "institutions")
 raw_base = str(Path(__file__).parent.parent.parent / "raw" / "纪律处分")
 
 files = [f for f in os.listdir(entity_dir) if f.endswith('.md')]
@@ -48,7 +48,7 @@ for fname in files:
         stats["has_source"] += 1
         source = source_match.group(1)
         pdf_name = source.replace('.txt', '.pdf')
-        pdf_path = os.path.join(raw_base, subdir, pdf_name)
+        pdf_path = os.path.join(raw_base, subdir, 'pdf', pdf_name)
         if os.path.exists(pdf_path):
             stats["pdf_found"] += 1
         else:

@@ -63,13 +63,16 @@ def extract_date_from_path(filepath):
 
 
 def get_module_dates():
-    """扫描各模块 raw 子目录，返回 {module_key: latest_date}"""
+    """扫描各模块 raw 子目录，返回 {module_key: latest_date}
+
+    递归扫描：PDF 栏目的文件在 pdf/txt 子目录，HTML 栏目文件在栏目根目录。
+    """
     dates = {}
     for key, subdir in MODULE_SUBDIRS.items():
         latest = '00000000'
         dir_path = RAW_DIR / subdir
         if dir_path.exists():
-            for f in dir_path.iterdir():
+            for f in dir_path.rglob('*'):
                 if f.is_file() and f.suffix not in ('.json', '.DS_Store'):
                     d = extract_date_from_path(f)
                     if d > latest:
@@ -83,7 +86,7 @@ def count_raw_files():
     for key, subdir in MODULE_SUBDIRS.items():
         dir_path = RAW_DIR / subdir
         if dir_path.exists():
-            total += len([f for f in dir_path.iterdir()
+            total += len([f for f in dir_path.rglob('*')
                          if f.is_file() and f.suffix not in ('.json', '.DS_Store')])
     return total
 
@@ -172,13 +175,12 @@ def main():
     run_py("parse/parse_html.py", "Step 2: 解析 HTML 公告")
 
     # ── 3. 重建 wiki ──
-    # 顺序关键：先创建 entity → 提取结构化数据 → 映射概念 → 补充概念链接
-    run_py("wiki/create_entities.py", "Step 3: 创建 entity 页面")
-    run_py("wiki/create_modules.py", "Step 3: 创建 module 页面")
+    # 顺序关键：先创建 institution → 提取结构化数据 → 映射违规类型 → 补充违规类型链接
+    run_py("wiki/create_institutions.py", "Step 3: 创建 institution 页面")
     run_py("parse/extract_structured.py", "Step 3: 提取结构化数据")
-    run_py("wiki/concept_map.py", "Step 3: 违规 → 概念映射")
-    run_py("wiki/update_entities.py", "Step 3: 更新 entity 概念链接")
-    run_py("wiki/create_concepts.py", "Step 3: 创建 concept 页面")
+    run_py("wiki/map_violations.py", "Step 3: 违规 → 违规类型映射")
+    run_py("wiki/update_institutions.py", "Step 3: 更新 institution 违规类型链接")
+    run_py("wiki/create_violations.py", "Step 3: 创建 violations 页面")
     run_py("wiki/create_analysis.py", "Step 3: 创建 analysis 页面")
     run_py("wiki/create_regulations.py", "Step 3: 创建法规页面")
 

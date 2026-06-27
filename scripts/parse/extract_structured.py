@@ -1,6 +1,14 @@
 """
-阶段2: 从 OCR TXT 文件中提取结构化处罚数据
-输出: scripts/tmp/parsed_data.json
+阶段2: 从 OCR TXT 文件中提取违规行为结构化数据
+
+职责：读取已建的机构页（institutions/）及其引用的原始 TXT，深度提取每条处罚的
+      违规行为、字号、处罚措施、法规依据等结构化字段，输出 parsed_data.json，
+      供 map_violations.py 做违规类型映射。
+
+输入：wiki/institutions/*.md + raw/纪律处分/机构/txt/*.txt
+输出：scripts/tmp/parsed_data.json
+
+依赖：须在 parse_txt.py + create_institutions.py 之后运行（需要已建的机构页）。
 """
 import os
 import re
@@ -8,7 +16,7 @@ import json
 from pathlib import Path
 
 RAW_BASE = str(Path(__file__).parent.parent.parent / "raw" / "纪律处分")
-ENTITY_DIR = str(Path(__file__).parent.parent.parent / "wiki" / "entities")
+ENTITY_DIR = str(Path(__file__).parent.parent.parent / "wiki" / "institutions")
 OUTPUT = str(Path(__file__).parent.parent / "tmp" / "parsed_data.json")
 
 
@@ -130,7 +138,7 @@ def parse_one_entity(fname, entity_content):
         return None
     txt_name = m.group(1)
     subdir = '人员' if 'subtype: 个人' in entity_content else '机构'
-    txt_path = os.path.join(RAW_BASE, subdir, txt_name)
+    txt_path = os.path.join(RAW_BASE, subdir, 'txt', txt_name)
 
     if not os.path.exists(txt_path):
         return None

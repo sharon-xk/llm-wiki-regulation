@@ -179,7 +179,7 @@ def process_file(filepath):
     return new_fm, new_filename, body
 
 def main():
-    entities_dir = Path(__file__).parent.parent.parent / "wiki" / "entities"
+    entities_dir = Path(__file__).parent.parent.parent / "wiki" / "institutions"
     dry_run = '--execute' not in sys.argv
 
     print(f"处理目录: {entities_dir}")

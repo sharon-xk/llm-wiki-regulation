@@ -258,7 +258,7 @@ def create_regulation_page(std_name):
         lines.append(f"## 关联违规类型")
         lines.append(f"")
         for concept, count in stats['concepts'].most_common():
-            lines.append(f"- [{concept}](concepts/{concept}.md) — {count} 次引用")
+            lines.append(f"- [{concept}](violations/{concept}.md) — {count} 次引用")
         lines.append(f"")
 
     # 高频条款 (top 10 by citation count)
@@ -277,7 +277,7 @@ def create_regulation_page(std_name):
             lines.append(f"- 引用次数：{art_info['count']}")
             if art_info['concepts']:
                 top_art_concepts = ', '.join(
-                    f"[{c}](concepts/{c}.md)" for c, _ in art_info['concepts'].most_common(3)
+                    f"[{c}](violations/{c}.md)" for c, _ in art_info['concepts'].most_common(3)
                 )
                 lines.append(f"- 关联违规：{top_art_concepts}")
             lines.append(f"")
@@ -289,7 +289,7 @@ def create_regulation_page(std_name):
         for entity in stats['entities'][:10]:
             # Clean entity filename
             entity_clean = entity.replace('.md', '')
-            lines.append(f"- [{entity_clean}](entities/{entity})")
+            lines.append(f"- [{entity_clean}](institutions/{entity})")
 
     content = '\n'.join(lines)
 

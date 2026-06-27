@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent.parent.parent
-ENTITY_DIR = BASE_DIR / "wiki" / "entities"
+ENTITY_DIR = BASE_DIR / "wiki" / "institutions"
 RAW_BASE = BASE_DIR / "raw" / "纪律处分"
 OUTPUT = Path(__file__).parent.parent / "tmp" / "ocr_tasks.txt"
 
@@ -22,8 +22,8 @@ for fname in sorted([f for f in os.listdir(ENTITY_DIR) if f.endswith('.md')]):
     pdf_name = source.replace('.txt', '.pdf')
     subdir = '人员' if 'subtype: 个人' in content else '机构'
 
-    pdf_path = os.path.join(RAW_BASE, subdir, pdf_name)
-    txt_path = os.path.join(RAW_BASE, subdir, source)
+    pdf_path = os.path.join(RAW_BASE, subdir, 'pdf', pdf_name)
+    txt_path = os.path.join(RAW_BASE, subdir, 'txt', source)
 
     if os.path.exists(pdf_path):
         tasks.append(f"{pdf_path}|{txt_path}|{fname}")

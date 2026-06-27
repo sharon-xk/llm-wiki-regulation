@@ -7,9 +7,9 @@ import re
 from pathlib import Path
 from collections import Counter, defaultdict
 
-PARSED_HTML = str(Path(__file__).parent.parent.parent / "raw" / "parsed_html_results.json")
+PARSED_HTML = str(Path(__file__).parent.parent.parent / "raw" / "parsed" / "parsed_html_results.json")
 MAP_FILE = str(Path(__file__).parent.parent / "config" / "reg_name_map.json")
-ENTITY_DIR = str(Path(__file__).parent.parent.parent / "wiki" / "entities")
+ENTITY_DIR = str(Path(__file__).parent.parent.parent / "wiki" / "institutions")
 REG_DIR = str(Path(__file__).parent.parent.parent / "wiki" / "regulations")
 
 # ===== 1. 更新映射表 =====
@@ -173,7 +173,7 @@ for reg_name, meta in reg_meta.items():
         lines.append("")
         for entity_file in stats['entities'][:15]:
             entity_name = entity_file.replace('.md', '')
-            lines.append(f"- [{entity_name}](entities/{entity_file})")
+            lines.append(f"- [{entity_name}](institutions/{entity_file})")
 
     content = '\n'.join(lines)
     fpath = os.path.join(REG_DIR, reg_name + '.md')

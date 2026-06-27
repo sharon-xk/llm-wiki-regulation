@@ -11,7 +11,7 @@ import textwrap
 from pathlib import Path
 
 BASE_DIR = str(Path(__file__).parent.parent.parent)
-ENTITY_DIR = os.path.join(BASE_DIR, "wiki", "entities")
+ENTITY_DIR = os.path.join(BASE_DIR, "wiki", "institutions")
 PARSED_DATA = os.path.join(Path(__file__).parent.parent, "tmp", "parsed_data_with_concepts.json")
 
 
@@ -120,10 +120,10 @@ def build_body(parsed, existing_fm):
             clean = re.sub(r'\s+', ' ', vc['text']).strip()
             summary = truncate_text(clean, 100)
             if vc['concepts']:
-                links = '、'.join([f'[{c}](/wiki/concepts/{c}.md)' for c in vc['concepts']])
+                links = '、'.join([f'[{c}](/wiki/violations/{c}.md)' for c in vc['concepts']])
                 lines.append(f'{i + 1}. {summary} → {links}')
             else:
-                lines.append(f'{i + 1}. {summary} → *待创建概念页*')
+                lines.append(f'{i + 1}. {summary} → *待创建违规类型页*')
             lines.append('')
 
     # 处罚措施
@@ -143,12 +143,12 @@ def build_body(parsed, existing_fm):
     lines.append('')
     if concepts_all:
         for c in sorted(concepts_all):
-            lines.append(f'- [{c}](/wiki/concepts/{c}.md)')
+            lines.append(f'- [{c}](/wiki/violations/{c}.md)')
     else:
         # 检查是否有 needs_new 的违规
         has_unmatched = any(vc.get('needs_new') for vc in violation_concepts)
         if has_unmatched:
-            lines.append('- *待创建概念页*')
+            lines.append('- *待创建违规类型页*')
         else:
             lines.append('- *暂无归类*')
     lines.append('')

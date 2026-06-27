@@ -1,6 +1,16 @@
 #!/usr/bin/env python3
 """
-解析纪律处分PDF的TXT文件，提取实体信息
+阶段1: 解析纪律处分 TXT，提取主体信息
+
+职责：从 OCR 后的纪律处分 TXT 文件中提取处罚主体信息（被处罚机构/人员名称、
+      字号、日期等），输出 parsed_txt_results.json，供 create_institutions.py 建机构页。
+
+输入：raw/纪律处分/机构/txt/*.txt
+输出：raw/parsed/parsed_txt_results.json
+
+与 extract_structured.py 的关系：
+    本脚本提取"主体信息"（建机构页所需），extract_structured.py 在机构页建成后
+    再提取"违规行为结构化数据"（字号/处罚措施/违规条款）。两者有先后依赖。
 """
 import re
 import json
@@ -212,7 +222,7 @@ def main():
     base_dir = Path(__file__).parent.parent.parent / 'raw'
 
     # 处理纪律处分/机构
-    jlcf_jg = process_directory(base_dir / '纪律处分/机构', '纪律处分-机构')
+    jlcf_jg = process_directory(base_dir / '纪律处分' / '机构' / 'txt', '纪律处分-机构')
     jlcf_jg_count = sum(len(v) for v in jlcf_jg.values())
 
     # 处理纪律处分/人员 — 已禁用，人名不纳入知识库
@@ -231,7 +241,7 @@ def main():
     # print(f'纪律处分-人员: {len(jlcf_ry)} 个实体, {jlcf_ry_count} 条记录')
 
     # 保存结果
-    output_file = base_dir / 'parsed_txt_results.json'
+    output_file = base_dir / 'parsed' / 'parsed_txt_results.json'
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(all_entities, f, ensure_ascii=False, indent=2)
 
