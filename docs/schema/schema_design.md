@@ -73,8 +73,8 @@ llm-wiki-regulation/
 
 ### 产品页 (products/)
 
-- **层**：planned（待建，按管理人类型分类）
-- **命名**：`产品类型名.md`，如 `证券公司集合资管计划.md`
+- **层**：fact（已建 10 个产品类型节点，按管理人类型分 5 个子目录）
+- **命名**：`产品类型名.md`，如 `证券公司资管/集合资管计划.md`
 - **内容**：产品定义、运作模式、监管框架、易发违规类型、典型案例
 - **Frontmatter**：`type: product`，含 `manager_type`（桥接 institution）、`product_form`（集合/定向/契约型）、`typical_concepts`（链接 violations）等字段
 - **合并规则**：历史承接关系的产品需合并并标注沿革（如「直投基金」并入「证券公司私募投资基金」）
