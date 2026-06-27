@@ -4,29 +4,26 @@
 
 ---
 
-## 实体 (entities)
+## 机构 (institutions)
 
-- 共 1603 个实体
+- 共 974 个机构（来源：AMAC）
 
-## 模块 (modules)
+## 人员 (persons)
 
-- [纪律处分](wiki/modules/纪律处分.md) — 纪律处分决定书
-- [异常经营](wiki/modules/异常经营.md) — 异常经营私募基金管理人
-- [失联机构](wiki/modules/失联机构.md) — 失联私募基金管理人
-<!-- - [自律措施](wiki/modules/自律措施.md) — 自律措施（数据停更于2020年）-->
+- 共 0 个人员（待接入纪律处分-人员数据）
 
-## 概念 (concepts)
+## 违规类型 (violations)
 
-- [信息披露违规](wiki/concepts/信息披露违规.md)
-- [关联交易违规](wiki/concepts/关联交易违规.md)
-- [利益输送](wiki/concepts/利益输送.md)
-- [承诺保本收益](wiki/concepts/承诺保本收益.md)
-- [投资者适当性违规](wiki/concepts/投资者适当性违规.md)
-- [挪用基金财产](wiki/concepts/挪用基金财产.md)
-- [未尽谨慎勤勉义务](wiki/concepts/未尽谨慎勤勉义务.md)
-- [未按规定登记备案](wiki/concepts/未按规定登记备案.md)
-- [虚假登记备案](wiki/concepts/虚假登记备案.md)
-- [违规募集](wiki/concepts/违规募集.md)
+- [信息披露违规](wiki/violations/信息披露违规.md)
+- [关联交易违规](wiki/violations/关联交易违规.md)
+- [利益输送](wiki/violations/利益输送.md)
+- [承诺保本收益](wiki/violations/承诺保本收益.md)
+- [投资者适当性违规](wiki/violations/投资者适当性违规.md)
+- [挪用基金财产](wiki/violations/挪用基金财产.md)
+- [未尽谨慎勤勉义务](wiki/violations/未尽谨慎勤勉义务.md)
+- [未按规定登记备案](wiki/violations/未按规定登记备案.md)
+- [虚假登记备案](wiki/violations/虚假登记备案.md)
+- [违规募集](wiki/violations/违规募集.md)
 
 ## 分析 (analysis)
 
