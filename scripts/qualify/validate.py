@@ -13,7 +13,7 @@ from pathlib import Path
 import random
 
 ENTITY_DIR = str(Path(__file__).parent.parent.parent / "wiki" / "institutions")
-PARSED = "/Users/sharon/ai-project/llm-wiki-regulation/scripts/tmp/parsed_data_with_concepts.json"
+PARSED = str(Path(__file__).parent.parent / "tmp" / "parsed_data_with_concepts.json")
 
 
 def check_entity(fname, parsed):

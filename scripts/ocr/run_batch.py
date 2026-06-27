@@ -104,8 +104,12 @@ def ocr_one_pdf(args):
         combined = "\n".join(full_text)
 
         # OCR 后处理纠正
-        from scripts.ocr.fix_ocr import fix_ocr_text
-        combined = fix_ocr_text(combined)
+        import importlib.util
+        _fix_path = os.path.join(os.path.dirname(__file__), "fix_ocr.py")
+        _spec = importlib.util.spec_from_file_location("fix_ocr", _fix_path)
+        _mod = importlib.util.module_from_spec(_spec)
+        _spec.loader.exec_module(_mod)
+        combined = _mod.fix_ocr_text(combined)
 
         with open(txt_path, 'w') as f:
             f.write(combined)

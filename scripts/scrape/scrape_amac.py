@@ -92,8 +92,12 @@ def ocr_pdf(pdf_path):
             text = "\n".join(full_text)
 
             # OCR 后处理纠正
-            from scripts.ocr.fix_ocr import fix_ocr_text
-            text = fix_ocr_text(text)
+            import importlib.util
+            _fix_path = os.path.join(os.path.dirname(__file__), "..", "ocr", "fix_ocr.py")
+            _spec = importlib.util.spec_from_file_location("fix_ocr", _fix_path)
+            _mod = importlib.util.module_from_spec(_spec)
+            _spec.loader.exec_module(_mod)
+            text = _mod.fix_ocr_text(text)
 
             # 写入 .ocr.txt
             ocr_txt_path = pdf_path.with_suffix(".ocr.txt")
