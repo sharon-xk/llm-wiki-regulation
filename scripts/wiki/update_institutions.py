@@ -38,7 +38,7 @@ def parse_frontmatter(content):
 def format_frontmatter(fm):
     """格式化 frontmatter 为字符串"""
     lines = ['---']
-    for key in ['type', 'name', 'subtype', 'source_count', 'first_incident', 'latest_incident', 'tags']:
+    for key in ['type', 'name', 'subtype', 'source', 'source_count', 'first_incident', 'latest_incident', 'tags']:
         if key in fm:
             val = fm[key]
             if isinstance(val, list):

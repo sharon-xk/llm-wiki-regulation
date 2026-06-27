@@ -123,7 +123,8 @@ def build_jlcf_entity(name, records, subtype, subject_info=None):
 
     info = subject_info or {}
     fm_parts = [
-        "type: entity", f"name: {name}", f"subtype: {subtype}",
+        "type: institution", f"name: {name}", f"subtype: {subtype}",
+        "source: AMAC",
         f"source_count: {len(records)}",
         f"first_incident: {first_incident}", f"latest_incident: {latest_incident}",
     ]
@@ -188,9 +189,10 @@ def build_html_entity(name, records, module_type):
     latest = records[0]['date'][:7] if records else ''
 
     fm = f"""---
-type: entity
+type: institution
 name: {name}
 subtype: 基金管理人
+source: AMAC
 source_count: {len(records)}
 first_incident: {first}
 latest_incident: {latest}

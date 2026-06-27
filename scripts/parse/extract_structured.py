@@ -119,6 +119,12 @@ def extract_violation_section(text):
     start_patterns = [
         r'一[、.]\s*基本事实\s*\n(.*?)(?=二[、.]|$)',  # 标准结构
         r'一[、.]\s*(?:事先告知情况|基本事实)\s*\n(.*?)(?=二[、.]|三[、.]|$)',  # 变体
+        # 变体：经查，XXX存在以下违规[行为|事实|情况]：... 到 审理意见/协会决定/根据 结束
+        r'经查[，,].*?(?:违规[行事实况情况]+|违法违规事实)[：:]\s*(.*?)(?=审理意见|协会决定|根据《|$)',
+        # 变体：经查，XXX存在...违规[行为|事实]，具体如下：...（倒装结构）
+        r'经查[，,].*?(?:违规[行事实况情况]+)[，,]\s*具体(?:如下)?[：:]\s*(.*?)(?=审理意见|协会决定|根据《|$)',
+        # 变体：经查后直接是违规事实（无"存在以下违规行为"中转），到 审理意见/协会决定 结束
+        r'经查[，,]\s*(.*?)(?=审理意见|协会决定|根据《|$)',
     ]
     for pat in start_patterns:
         m = re.search(pat, text, re.DOTALL)
@@ -127,7 +133,8 @@ def extract_violation_section(text):
             # Remove evidence line
             section = re.sub(r'以上[事实行为].*?[。\n]', '', section, flags=re.DOTALL)
             section = re.sub(r'\d+\s*$', '', section)  # trailing page numbers
-            return section
+            if len(section) > 10:  # 确保提取到实质内容
+                return section
     return ""
 
 
