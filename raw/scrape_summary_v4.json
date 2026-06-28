@@ -1,96 +1,4751 @@
 {
-  "纪律处分_机构": [
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202604_P020260430636581133360.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202606_P020260618605306895016.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202604_P020260430637684494263.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202606_P020260618603967453483.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202606_P020260612607756518033.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202605_P020260522616758486238.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202605_P020260515558728857382.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202604_P020260430626859345466.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202605_P020260507632461874372.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202604_P020260430675613592382.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202606_P020260626634623905701.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202605_P020260522617672683930.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202606_P020260612609061288927.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202605_P020260508595084826608.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202605_P020260508594580696293.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202604_P020260430635105082094.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202605_P020260515558923813765.pdf"
-    },
-    {
-      "status": "scan_only",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/机构/pdf/202606_P020260626635887404275.pdf"
-    }
-  ],
-  "异常经营": [
+  "纪律处分_人员": [
     {
       "status": "success",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/异常经营/202606_t20260618_27875.html"
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614613544790572.pdf",
+      "is_ocr": true
     },
     {
       "status": "success",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/异常经营/202605_t20260508_27685.html"
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394327436125.pdf",
+      "is_ocr": true
     },
     {
       "status": "success",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/异常经营/202606_t20260615_27829.html"
-    }
-  ],
-  "失联机构": [
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240403630361969060.pdf",
+      "is_ocr": true
+    },
     {
       "status": "success",
-      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/失联机构/202604_t20260430_27638.html"
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250613600854620361.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251212608117675389.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124627569403078.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202211_P020231126394402570819.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240816543246599893.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250103624533465837.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260403630506108775.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394393586215.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705616076432220.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202603_P020260320678969638469.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240726624607768636.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251205621930158236.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250808641455075297.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250930581785374946.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705618246550843.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241011591040009813.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250328622593457006.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240322629151038787.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394347958851.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250418633509204639.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394336118029.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260417628836705358.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202302_P020231126394227674110.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621624350670653.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240913581432158220.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260515561516871397.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127545077577718.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394258559560.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105601981419705.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394467308881.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241011590853740265.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251205622929269008.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660906637646.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260515559915241714.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705622892970593.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240830578873004815.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250221607193876412.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250822604246900936.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930599553949063.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430674962373583.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231208623785399687.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394537897971.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394445025541.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240823619514269648.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127543420673964.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394552847832.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394261870674.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231229634951388484.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250613600687817461.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250110623960930470.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250526502995714916.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240322631805289798.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394464584281.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124624163863031.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241129598873428873.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250509623609174199.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240802593380211384.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930603356854876.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517607255526725.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260515559321071870.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240315612295055919.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202212_P020231126394426841091.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250103626405243770.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241025570635098861.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250411566321169592.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240823619313748214.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660902682499.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250425616923416200.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250418633165600375.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250221609948052083.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241101633521249233.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250509622976715979.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250523634628925712.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231229635305876549.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241220561735140730.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260206664027546852.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260515559146077174.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250103622905714312.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394506400922.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202507_P020250725602711454205.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251114604158591871.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250411566494073024.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607571832400001.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394433361660.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394290837432.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260403630504103343.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202507_P020250725602888927174.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240416605397518999.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241025570022933073.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241025570400914904.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241129600544610859.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241122584339116231.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250822604779355748.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394525165183.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618377719363.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394414959073.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241206629450970810.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394292465512.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250221611536381198.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618265231527.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607577716310371.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524510464834724.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430674083121536.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124623472230532.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618288651337.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251205622514379048.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621624719405945.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240816552720204637.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260515561670010568.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241206628762879480.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394473413289.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614615875583832.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241227585289339706.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202306_P020231126394365322771.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250808641725127709.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394427846096.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394242816013.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250207496591548138.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208585693219676.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241101633814003007.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240416607475201383.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394487687504.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394390110881.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240628570589525943.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240322630716172859.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240126587416659504.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394523082850.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394502430462.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202510_P020251031616324280983.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250930581450190606.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607571629786915.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240416607649428433.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250425618210659911.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250117625359071854.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240830579114397758.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240510554752440281.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240510553739149765.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660904293345.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240913579788277865.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430636219448917.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394411781169.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240531604205517022.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260508595560615291.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394280460942.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231215626976856082.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240329601424384034.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250523634449047207.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240920552738723818.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240830580116328772.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241018627458803837.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607567941988349.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394244481088.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250328622047952198.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660907345096.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614617628411616.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240223623751026574.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705621155110691.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105602168896351.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250214622935743197.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240628571990672041.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202510_P020251031617094753585.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394452510432.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394388514359.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240816552540070142.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251205621768209952.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705621537154450.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202603_P020260320679332181984.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517605433984088.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430673428430257.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260612608489385510.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394329028577.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394341819770.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202601_P020260109619175763031.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240126587819638731.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250926609399838921.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240726625050310500.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202212_P020231126394174610448.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250808640744352537.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241101634106906777.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240223625740757865.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394400083653.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240823620787989269.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240823619709947993.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260403630505306171.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394458842517.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430675375846299.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660903177937.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260618604664840493.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127545562503247.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260403630506816936.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250425617860785762.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394416532176.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394287464833.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208582958977674.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250403606492451280.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124626353732548.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241011591437040171.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260618611018247937.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240809595330819204.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394474797128.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394437641996.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240913580140853664.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202211_P020231126394404297725.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618345177460.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250901564316780627.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260508595358164284.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250930581603572969.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250425620037217724.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241129599796125287.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618348320278.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394413305797.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705618041052482.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260206664510769690.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241206629213190685.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394546580947.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241101633314944077.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250103622743855617.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660903940844.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240403630132414085.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240515602017834405.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208581729425611.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231208591605648717.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394490511062.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240802590993589001.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240426666748809955.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250509626090898644.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430635599586693.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394306554414.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524514465925853.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202307_P020231126394370823628.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260626634845582394.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202507_P020250704610119031526.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124623928243417.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240416609179993612.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260213627953106672.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250321630731763998.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614617071157957.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260206662530410746.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250103624234567082.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240322629585281598.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240802591561494597.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231654981574824.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394240842720.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607580153601802.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251107620616025773.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241227584197916379.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250110623525084583.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250403578724630525.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240301592070111189.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240913613506530412.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394477603910.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105611923610509.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660905023348.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208586771755594.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240426664735702730.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202211_P020231126394400725669.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394551042156.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250403607483355580.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250801617989882650.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250815635412305976.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250430564063970360.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430671941368137.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240329599892709655.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231229635638737356.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705622258816366.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250110623752816290.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394304734436.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231654983042378.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614617774986997.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430671483982501.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705622041952349.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202211_P020231126394397105886.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394438999749.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241122584603589539.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394260130101.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127542436802501.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231201635690311744.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250425617360614160.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621624538760190.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240823619930664117.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394391863342.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260213627949606294.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240315611354612933.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394562131056.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202302_P020231126394220875595.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394492121946.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240223623336828236.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202211_P020231126394382192604.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250117625145439759.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241018627055887961.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231215628705598853.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250403607726780408.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241220562111860033.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208577271520289.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250620622658322276.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394483497791.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124626515121797.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202212_P020231126394172816999.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240329601024190516.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251128627465084971.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124626147828888.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660906002817.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260522618062363495.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524507320340897.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202510_P020251031617689631003.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260206662959015507.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250110623272503490.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517607861810156.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240920549221567408.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241108545012116690.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621628510222999.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394419691913.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260403630506435602.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202212_P020231126394417021803.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394308116321.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240830580360617751.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430635863814117.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240531604027443864.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260515561360459453.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430674539795924.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394461780129.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394469008550.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250214625370545634.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524508625287228.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240628570751281364.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430674765646783.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240112643109223584.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394555770854.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250530622115232144.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394436150706.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621626294714273.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250214624677831317.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517608049898154.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240419615926222470.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394361789701.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202301_P020231126394193590762.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241108553935918968.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250214620729033536.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240322630213015779.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394402223550.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251212607847425318.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240515600430573789.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240112635305508836.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202212_P020231126394415377609.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127540602886808.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250207496212228712.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930604157857922.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430636766318236.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240403629925694569.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251121617385953204.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250221607508056101.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127544333118384.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202301_P020231126394195750487.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251121616992597473.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250930582572860792.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241220561549904655.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394282482517.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250912620888987149.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240802593578310384.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241129600288378565.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394497633003.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660903571158.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394316971206.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394557866997.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614616389308501.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240223623125827292.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250418632771187168.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614614082096670.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524514118106185.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250815635792192478.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250801617829793789.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260612608231391483.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240531603016293382.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394529949718.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394504294238.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250815635955396488.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394418128332.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240628570435482099.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260507642511914147.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240515602690792006.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202301_P020231126394199417944.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250926610017329297.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260410629709697613.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240809595065222289.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240403629564249601.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240809595554548208.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202510_P020251017614320848453.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241011591220645519.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240628571816391715.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250328618690482625.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607576359561610.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250403608490941912.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250207497466331479.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208577581613969.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260522616980638885.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660902275509.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240531602855539060.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240202628040666621.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430627563452036.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127545749443598.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208583837812533.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231215626211274508.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250328621886907833.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394375506291.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394345928905.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394294863628.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202302_P020231126394216755047.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250321631004140222.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250815635590930388.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250214621246333570.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250214620879518067.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241025571104078097.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394484966530.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394296587044.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250530622799501052.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394289097833.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607573740566328.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240329601179171646.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240329600848422630.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250523634265360208.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260417628386953604.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231215623404305416.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231201635978883899.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394343835541.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430675186552304.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241213590524429364.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250214622014913784.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430671671356828.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614615526873920.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202510_P020251017614496543253.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240913612937911678.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202601_P020260116655130183934.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394352885999.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240726625869508559.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618342007407.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208582355343343.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241129599102269366.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430673065144715.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618293974023.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240515602323091608.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251128626531033065.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930572123214203.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241022602203523846.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430627217173719.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394334265722.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251107618815144609.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260403630507185143.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250328619671272958.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231229636021905088.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251114606397084145.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231201633004582667.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517608225747907.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240628571203365392.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250221610270487705.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208584159008017.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250117625746638554.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250606610991308991.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517605639937591.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231201635472945370.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618262752379.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394532632330.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127542200952797.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250808640954782752.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240315610635143470.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124626835248268.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260618604517563663.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394534599320.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105613319660005.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251114606580145620.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241022601606231587.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202307_P020231126394368777884.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394250702010.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240416609030539664.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240403629750296733.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394330794993.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260618605722705751.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240112637523826573.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202212_P020231126394413690611.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240920543745746766.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240809596815614278.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251107620979584152.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240920552545145665.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240913581126957469.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621625201815170.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208584445401134.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394358119787.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202603_P020260327632655823862.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251212607646918076.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517608723660445.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240322630912016763.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250627517626233169.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241227584553485780.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260403630503687699.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618290926060.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124627911994160.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705619490315550.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607573583222490.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394256142599.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250822604447029641.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607571441444241.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250919591600922682.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240920551297682151.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208585055638541.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260612608006639282.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127541646387322.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930603539057649.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524505646301484.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105612098899981.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240202630003472204.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240416607067949756.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394455310455.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241018626541005524.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394430607574.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430673674314883.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394403921648.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202306_P020231126394366912324.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614612957072239.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250403578536227718.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127545287137690.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208586440780646.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251205622757353276.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930597854573312.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250103624788025965.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240830579944299690.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240322631618042932.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202302_P020231126394212726307.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430646849633640.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124622930229733.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240823620126909716.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240329601887909425.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250627517389930530.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260403630504556658.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251107621397791363.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231229636367322639.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240920549393962413.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394299709992.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517604378697260.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240329600147208216.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394548929451.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250117625945120743.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260522617262006449.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250321631285751045.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202603_P020260320681282294977.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260508594844272386.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250221610099183341.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240726624424785301.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394514346312.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127544651891815.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394340062943.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250411567341942211.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430637239952141.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394542435660.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240531603801109903.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394396841991.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260424623306400212.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105596119261726.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260424625010413349.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240823620295167428.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240419616542748681.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394471963926.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250930582286624988.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250425617625567481.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394450538627.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240126586441786774.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241108544827794698.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260213627952011491.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240329602097318342.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260213627951058163.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202212_P020231126394418589766.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517608517582582.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240223625429302368.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240315611025969694.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241108607848907362.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241206628564668374.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202507_P020250704611098688360.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260507643366916493.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241108545233746003.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394424685285.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394354746894.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202601_P020260116655229274560.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240802591385318522.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614616914585885.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231654982480455.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241108545403659201.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394338220465.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394449178713.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202601_P020260116655404426108.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250606611369811977.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202212_P020231126394423857769.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260213627950352306.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240510554024257606.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394479209906.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241115566621991199.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124627265272254.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105613055383672.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394486335647.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394544376933.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394302977392.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524507150335942.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250509626495111206.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607578338943674.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250509625915847492.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250509625152510098.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240223624573261174.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127539361934200.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240202629121971663.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202601_P020260109618958006073.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430635360571127.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250403578270957658.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394465951618.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524511062773207.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240515602168324689.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394463215257.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208582660444244.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250606611916929419.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250912621096043918.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618314691956.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621625391301718.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240816543042885689.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614614557757112.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394539955250.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250321631644213699.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202507_P020250718572855368844.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260626635626792840.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202507_P020250718575247349609.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250430563412126931.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260206665585268119.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127539561646195.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208583266799936.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394378979837.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618346567835.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251114606754983310.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250411566146901944.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240726625693573895.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614617930669357.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394332404267.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394527249881.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394447784346.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202603_P020260327632655114332.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231201635099427442.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202211_P020231126394398786461.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240510552790504109.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394516781698.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260618604974794327.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127546135967911.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250110624101965247.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124625578383286.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618388316421.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394442192342.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260213627954100890.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240726626061079604.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660906997403.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394443601688.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "download_failed"
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241213590857440950.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240816543672658497.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250403606645183435.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430674270559144.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250411566961679194.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250912601613522489.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524508116209650.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240329600389292854.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202301_P020231126394202780427.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250328618888650029.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240913580942640905.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260626635262848647.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394559853423.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394500074101.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250509626332295410.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394480549754.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208583548779608.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621625763054871.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394434740443.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394431951519.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124625356151241.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618310818410.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241011592014551871.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660904649993.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260410629710071714.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241213588920402178.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240202629516403505.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394382981900.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621628722540555.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240726625442733750.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105612482918882.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240809594569670623.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105602379890678.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250509625684594730.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231654983404673.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394407111737.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394377258851.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430673237076584.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240416607972467184.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250926609743744021.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394421210536.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660905352401.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430627680402274.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127541406797616.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621625586544065.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614616615371687.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614613172277721.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430646647942071.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260410629710385206.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250430563241047095.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202603_P020260327632656137951.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705623230778846.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240510553523528402.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394511116971.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202601_P020260116655010510496.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614613357859071.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260618605520771931.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394360027692.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240913580358557577.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240202629305838125.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127544488941852.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241018627709965483.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202212_P020231126394421889420.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660908020548.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241206628967523961.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231654982059667.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241227586789523066.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240802590805163932.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394318609694.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250214622405644316.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250801617646276640.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705619706355784.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394398540771.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430636946879764.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240920543926680170.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240816543454270156.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517601488941282.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240809594813808039.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260403630504908027.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240830578452300884.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250930578084060131.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208581403702445.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241011591824845102.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705623503551784.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240202629719360364.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240515602887351336.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260213627948818296.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660907695569.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250815635228570673.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260430628021280431.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241108608378920203.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394248957211.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202601_P020260109617220049433.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394410073833.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202603_P020260327632655494110.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250606612193935283.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930572492709669.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251114604017115841.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202510_P020251017613674519256.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250418633325569762.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250221611381048017.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250530622457954655.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250117624940279472.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240419616387566753.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202603_P020260327632656464108.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240202628729441931.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250430564258750221.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202502_P020250213497251072310.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260522617883777836.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202302_P020231126394223168311.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250425619512895486.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394440709737.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240329600614030475.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241213592062838078.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250117624732343848.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202510_P020251017613894952633.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250425616618112098.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127543577090951.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930598384958797.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240202628912600481.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394426209212.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241108608133477062.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618267393036.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394386566781.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240517604634703972.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202302_P020231126394214795530.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930597652016791.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231215623861062863.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240906624075759871.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231201633783479266.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250403608313619905.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127540425545072.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124627750480634.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394470580981.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127543730888845.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251128626720413375.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202211_P020231126394379931281.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240913582139827352.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127542923793935.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250530623010038104.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394285732886.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260522618226795835.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260213627954835821.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250103626156023603.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127540851445039.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430673879057511.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607575827429913.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250919591432759817.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394405520473.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394395293908.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394493970154.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394325433006.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394246854338.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241129599575363073.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240614615721256400.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202503_P020250328622782389881.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621624158151195.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618382364386.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250117625535147309.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621623971417459.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607575636460639.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231215628391419264.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250411568047688933.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241011590344932641.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524513573148055.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250509625355196094.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394495648930.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231208623485718348.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394301346287.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250103625926305329.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240531603503289417.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202605_P020260507645718697848.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231215622829551815.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240322631083677346.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394298173799.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240112641828572971.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240726625238736077.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202508_P020250822604616625694.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105600072461328.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240202628497934821.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524504914175556.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202505_P020250530623185683927.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660901416213.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202510_P020251017614149359605.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127539961475587.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240830580572252259.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524507901760481.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240726624869852343.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240426666492873141.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607568424357691.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240430672227350154.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240105595862890941.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240426665052380673.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240906623854765496.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394482053615.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930603940229284.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394254315547.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930599192811130.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930599356312821.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240416605578489852.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202212_P020231126394425425608.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231222622169432810.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202310_P020231126394520016280.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394384744738.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394278793966.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394408637748.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260626635048687253.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250430563594567440.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240621626458298523.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394429239613.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618385928269.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241025570910079094.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618376008350.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250912601814885693.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240930598583918267.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250430564415293880.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250430563930357012.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240913579963110871.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250620623001075245.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394381191298.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202407_P020240705615732300921.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250930582770595960.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241213593193326791.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202302_P020231126394218810680.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250606611671450001.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202402_P020240208582042202376.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394508885646.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240112642850081623.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251128627277384541.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202507_P020250704610912261947.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394422954921.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127539720008311.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202301_P020231126394197422750.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202603_P020260327632656764799.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202510_P020251031616091964620.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240607573414931969.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260417629009425485.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202408_P020240823620583447199.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202303_P020231126394252520843.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202601_P020260116655496414405.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240531602699945403.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202403_P020240315612090645128.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202606_P020260618604812473206.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127542668609388.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202305_P020231126394363459925.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250124627110663877.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241213591891360832.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660901877720.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202406_P020240628571052720017.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250127546402299081.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202601_P020260109619577165353.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202304_P020231126394310337128.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240416608863568189.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240112635114026825.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251128626921973360.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202602_P020260214618316641681.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202511_P020251114603852668790.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394489075369.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202512_P020251231660908330350.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250425618022566246.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202411_P020241122584129756499.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524508357572417.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202308_P020231126394446405984.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394460247329.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202501_P020250103626594094472.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202506_P020250620622824941867.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202405_P020240524514892014082.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202510_P020251017613497370141.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394476141136.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202302_P020231126394225643602.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202504_P020250418632978022573.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250912620093814002.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202410_P020241018626841432631.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202409_P020240906622774072033.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202312_P020231215627785133700.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202604_P020260403630505743508.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250919591275212229.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202401_P020240126587675841496.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202509_P020250930582918552371.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202309_P020231126394453942309.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202404_P020240403630881527780.pdf",
+      "is_ocr": true
+    },
+    {
+      "status": "success",
+      "file": "/Users/connor/workspace/ai-lab/ai-knowledge-base/llm-wiki-regulation/raw/纪律处分/人员/pdf/202412_P020241213593447023966.pdf",
+      "is_ocr": true
     }
   ]
 }

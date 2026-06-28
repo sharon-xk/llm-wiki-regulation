@@ -6,11 +6,11 @@
 
 ## 机构 (institutions)
 
-- 共 1003 个机构（来源：AMAC）
+- 共 1005 个机构（来源：AMAC）
 
 ## 人员 (persons)
 
-- 共 1 个人员
+- 共 833 个人员
 
 ## 违规类型 (violations)
 
