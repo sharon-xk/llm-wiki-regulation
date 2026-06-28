@@ -24,9 +24,10 @@ SCRIPTS_DIR = Path(__file__).parent
 STATE_FILE = SCRIPTS_DIR / "tmp" / "ingest_state.json"
 RAW_DIR = BASE_DIR / "raw"
 
-# 模块 key → raw 子目录映射（与 scrape_amac.py 保持一致，不含 scfry）
+# 模块 key → raw 子目录映射（与 scrape_amac.py 保持一致）
 MODULE_SUBDIRS = {
     "scfjg": "纪律处分/机构",
+    "scfry": "纪律处分/人员",
     "ycjy": "异常经营",
     "sljg": "失联机构",
     # "zlcs": "自律措施",  # 数据停更于2020年
@@ -175,8 +176,9 @@ def main():
     run_py("parse/parse_html.py", "Step 2: 解析 HTML 公告")
 
     # ── 3. 重建 wiki ──
-    # 顺序关键：先创建 institution → 提取结构化数据 → 映射违规类型 → 补充违规类型链接
+    # 顺序关键：先创建 institution/person → 提取结构化数据 → 映射违规类型 → 补充违规类型链接
     run_py("wiki/create_institutions.py", "Step 3: 创建 institution 页面")
+    run_py("wiki/create_persons.py", "Step 3: 创建 person 页面")
     run_py("parse/extract_structured.py", "Step 3: 提取结构化数据")
     run_py("wiki/map_violations.py", "Step 3: 违规 → 违规类型映射")
     run_py("wiki/update_institutions.py", "Step 3: 更新 institution 违规类型链接")

@@ -47,18 +47,31 @@ def _parse_subject_info(subject):
         for kw in ['时任', '现任', '登记为', '曾任']:
             if kw in clean:
                 idx = clean.find(kw)
-                pos_str = clean[idx:]
-                end_match = re.search(r'[，,]', pos_str)
-                if end_match:
-                    pos_str = pos_str[:end_match.start()]
-                info['position'] = pos_str
+                # kw 之后到句号/下一个关键字为止的整段
                 rest = clean[idx + len(kw):]
-                rest = re.sub(r'[^公司管理投资]*((?:有限公司?|基金管理|投资中心|合伙企业).*)', r'\1', rest)
-                end_match = re.search(r'[，,\s]', rest)
-                if end_match:
-                    org = rest[:end_match.start()].strip()
-                    if org:
-                        info['org'] = org
+                # 截到句号或"当事人"结束
+                rest = re.split(r'[。\.]|当事人|根据', rest)[0].strip()
+                # org: 提取公司名（以 公司/合伙企业/基金管理中心/企业 等结尾）
+                org_match = re.search(r'([\u4e00-\u9fa5A-Za-z（）()]+?(?:有限公司|有限责任公司|股份有限公司|合伙企业|管理中心|管理企业|投资中心|集团)(?:[（(][^)）]*[)）])?)', rest)
+                if org_match:
+                    info['org'] = org_match.group(1).strip()
+                    # position: org 之后的职务（如 法定代表人/总经理/合规风控负责人）
+                    after_org = rest[org_match.end():].strip(' ，。、的')
+                    # 清除"〈简称XX》""(以下简称XX)"等噪声
+                    after_org = re.sub(r'[〈《【\(（]?\s*(?:简称|以下简称)[^）)》〕〕]*[）)》〕〕]?', '', after_org)
+                    after_org = re.sub(r'^[）)〕〕]\s*', '', after_org).strip()
+                    # 常见职务关键词
+                    pos_match = re.search(r'(法定代表人|执行事务合伙人|总经理|副总经理|董事长|合规风控负责人|合规负责人|风控负责人|基金经理|实际控制人|董事|监事|高管|负责人)', after_org)
+                    if pos_match:
+                        info['position'] = pos_match.group(1)
+                    elif after_org and len(after_org) <= 15:
+                        info['position'] = after_org
+                    else:
+                        info['position'] = kw  # 无明确职务，只记关键词
+                else:
+                    # 无公司名，position 取到逗号/句号
+                    pos_str = re.split(r'[，,。]', rest)[0].strip()
+                    info['position'] = pos_str[:30] if pos_str else kw
                 break
     else:
         clean2 = subject
@@ -270,14 +283,7 @@ def main():
             filepath = ENTITIES_DIR / f"{safe_filename(clean_name)}.md"
             filepath.write_text(build_jlcf_entity(clean_name, records, '基金管理人', info), encoding='utf-8')
             created += 1
-
-        for name, records in txt_data.get('纪律处分_人员', {}).items():
-            clean_name = clean_subject(name)
-            if not clean_name: continue
-            info = _parse_subject_info(name)
-            filepath = ENTITIES_DIR / f"{safe_filename(clean_name)}.md"
-            filepath.write_text(build_jlcf_entity(clean_name, records, '个人', info), encoding='utf-8')
-            created += 1
+        # 注：纪律处分_人员 由 create_persons.py 处理，写入 persons/
         print(f"纪律处分 entity: {created}")
 
     # ─── 2. 异常经营 / 失联机构 (parsed_html_results.json) ───

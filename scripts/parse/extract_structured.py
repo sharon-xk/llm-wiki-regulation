@@ -138,14 +138,16 @@ def extract_violation_section(text):
     return ""
 
 
-def parse_one_entity(fname, entity_content):
-    """解析单个 entity"""
+def parse_one_entity(fname, entity_content, source_dir='机构'):
+    """解析单个 entity
+
+    source_dir: '机构' 或 '人员'，决定读取哪个 txt 子目录
+    """
     m = re.search(r'\*\*来源\*\*:\s*(\S+)', entity_content)
     if not m:
         return None
     txt_name = m.group(1)
-    subdir = '人员' if 'subtype: 个人' in entity_content else '机构'
-    txt_path = os.path.join(RAW_BASE, subdir, 'txt', txt_name)
+    txt_path = os.path.join(RAW_BASE, source_dir, 'txt', txt_name)
 
     if not os.path.exists(txt_path):
         return None
@@ -192,38 +194,43 @@ def main():
         "short_docs": 0, "violation_items_total": 0,
     }
 
-    for fname in sorted(os.listdir(ENTITY_DIR)):
-        if not fname.endswith('.md'):
+    # 同时遍历机构页和人员页
+    PERSONS_DIR = str(Path(__file__).parent.parent.parent / "wiki" / "persons")
+    for entity_dir, source_dir, label in [(ENTITY_DIR, '机构', '机构'), (PERSONS_DIR, '人员', '人员')]:
+        if not os.path.isdir(entity_dir):
             continue
-        fpath = os.path.join(ENTITY_DIR, fname)
-        with open(fpath, 'r') as f:
-            entity_content = f.read()
+        for fname in sorted(os.listdir(entity_dir)):
+            if not fname.endswith('.md') or fname.startswith('_'):
+                continue
+            fpath = os.path.join(entity_dir, fname)
+            with open(fpath, 'r') as f:
+                entity_content = f.read()
 
-        parsed = parse_one_entity(fname, entity_content)
-        if parsed is None:
-            continue
+            parsed = parse_one_entity(fname, entity_content, source_dir)
+            if parsed is None:
+                continue
 
-        results.append(parsed)
-        stats["total"] += 1
+            results.append(parsed)
+            stats["total"] += 1
 
-        if parsed["case_num"]:
-            stats["has_case_num"] += 1
-        else:
-            stats["no_case_num"] += 1
+            if parsed["case_num"]:
+                stats["has_case_num"] += 1
+            else:
+                stats["no_case_num"] += 1
 
-        if parsed["violations"]:
-            stats["has_violations"] += 1
-            stats["violation_items_total"] += parsed["violations_count"]
-        else:
-            stats["no_violations"] += 1
+            if parsed["violations"]:
+                stats["has_violations"] += 1
+                stats["violation_items_total"] += parsed["violations_count"]
+            else:
+                stats["no_violations"] += 1
 
-        if parsed["penalty"]:
-            stats["has_penalty"] += 1
-        else:
-            stats["no_penalty"] += 1
+            if parsed["penalty"]:
+                stats["has_penalty"] += 1
+            else:
+                stats["no_penalty"] += 1
 
-        if parsed["short_doc"]:
-            stats["short_docs"] += 1
+            if parsed["short_doc"]:
+                stats["short_docs"] += 1
 
     with open(OUTPUT, 'w') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)

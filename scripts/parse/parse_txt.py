@@ -91,19 +91,33 @@ def parse_txt_file(txt_path):
     if '中国证券投资基金业年报' in content or '图书在版编目' in content:
         return None
 
-    # 提取当事人
+    # 提取当事人（信息可能跨行，需合并到句号结束）
     subject = ''
     subject_info = ''  # 保存当事人完整信息用于后续分析
-    for line in content.split('\n')[:20]:
+    lines_list = content.split('\n')
+    subj_start = -1
+    for i, line in enumerate(lines_list[:20]):
         if '当事人' in line and ('：' in line or ':' in line):
             parts = re.split(r'[:：]', line, 1)
             if len(parts) > 1:
                 subject = parts[1].strip()
-                # 去除《》等标记
-                subject = re.sub(r'《.+', '', subject)
-                subject = subject.strip()
+                subj_start = i
+                # 合并后续行，直到遇到句号。"（中文句号）或空行或新的"当事人"
+                merged = subject
+                for j in range(i + 1, min(i + 5, len(lines_list))):
+                    next_line = lines_list[j].strip()
+                    if not next_line or '当事人' in next_line:
+                        break
+                    merged += next_line
+                    if '。' in next_line or '.' == next_line[-1:]:
+                        break
+                subject = merged
+                # 去除《》等标记及其后内容（如"《以下简称XX》")
+                subject = re.sub(r'《[^》]*》?[^。]*', '', subject)
+                subject = re.sub(r'\(\s*以下简称[^)]*\)?', '', subject)
+                subject = subject.strip('，。 　')
                 # 保存当事人信息行
-                subject_info = line
+                subject_info = subject
             break
 
     if not subject:
@@ -225,20 +239,20 @@ def main():
     jlcf_jg = process_directory(base_dir / '纪律处分' / '机构' / 'txt', '纪律处分-机构')
     jlcf_jg_count = sum(len(v) for v in jlcf_jg.values())
 
-    # 处理纪律处分/人员 — 已禁用，人名不纳入知识库
-    # jlcf_ry = process_directory(base_dir / '纪律处分/人员', '纪律处分-人员')
-    # jlcf_ry_count = sum(len(v) for v in jlcf_ry.values())
+    # 处理纪律处分/人员
+    jlcf_ry = process_directory(base_dir / '纪律处分' / '人员' / 'txt', '纪律处分-人员')
+    jlcf_ry_count = sum(len(v) for v in jlcf_ry.values())
 
     # 合并结果
     all_entities = {
         '纪律处分_机构': dict(jlcf_jg),
-        # '纪律处分_人员': dict(jlcf_ry)
+        '纪律处分_人员': dict(jlcf_ry),
     }
 
     # 统计
     print('\n=== 统计 ===')
     print(f'纪律处分-机构: {len(jlcf_jg)} 个实体, {jlcf_jg_count} 条记录')
-    # print(f'纪律处分-人员: {len(jlcf_ry)} 个实体, {jlcf_ry_count} 条记录')
+    print(f'纪律处分-人员: {len(jlcf_ry)} 个实体, {jlcf_ry_count} 条记录')
 
     # 保存结果
     output_file = base_dir / 'parsed' / 'parsed_txt_results.json'

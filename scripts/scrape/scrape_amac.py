@@ -130,7 +130,7 @@ def get_all_links():
 
     modules = [
         ("scfjg", "https://www.amac.org.cn/zlgl/jlcf/scfjg/", "zlgl/jlcf/scfjg/", ".pdf"),
-        # ("scfry", "https://www.amac.org.cn/zlgl/jlcf/scfry/", "zlgl/jlcf/scfry/", ".pdf"),
+        ("scfry", "https://www.amac.org.cn/zlgl/jlcf/scfry/", "zlgl/jlcf/scfry/", ".pdf"),
         ("ycjy", "https://www.amac.org.cn/zlgl/ycjy/ycjyjgclgg/", "zlgl/ycjy/ycjyjgclgg/", ".html"),
         ("sljg", "https://www.amac.org.cn/zlgl/sljg/sljgclgg/", "zlgl/sljg/sljgclgg/", ".html"),
         # ("zlcs", "https://www.amac.org.cn/zlgl/zlcs/", "zlgl/zlcs/", ".html"),  # 自律措施数据停更于2020年
@@ -298,7 +298,7 @@ def main():
     # 处理每个模块
     modules = [
         ("纪律处分_机构", all_links.get("scfjg", []), "纪律处分/机构", ".pdf"),
-        # ("纪律处分_人员", all_links.get("scfry", []), "纪律处分/人员", ".pdf"),
+        ("纪律处分_人员", all_links.get("scfry", []), "纪律处分/人员", ".pdf"),
         ("异常经营", all_links.get("ycjy", []), "异常经营", ".html"),
         ("失联机构", all_links.get("sljg", []), "失联机构", ".html"),
         # ("自律措施", all_links.get("zlcs", []), "自律措施", ".html"),  # 自律措施数据停更于2020年

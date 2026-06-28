@@ -51,8 +51,9 @@ def main():
             run("parse/parse_txt.py", "Step 3: 解析纪律处分 TXT")
             run("parse/parse_html.py", "Step 3: 解析 HTML 公告")
         elif step == "wiki":
-            # 顺序关键：先创建 institution → 提取结构化数据 → 映射违规类型 → 补充违规类型链接
+            # 顺序关键：先创建 institution/person → 提取结构化数据 → 映射违规类型 → 补充违规类型链接
             run("wiki/create_institutions.py", "Step 4: 创建 institution 页面")
+            run("wiki/create_persons.py", "Step 4: 创建 person 页面")
             run("parse/extract_structured.py", "Step 4: 提取结构化数据")
             run("wiki/map_violations.py", "Step 4: 违规→违规类型映射")
             run("wiki/update_institutions.py", "Step 4: 更新 institution 违规类型链接")

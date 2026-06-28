@@ -12,6 +12,7 @@ from pathlib import Path
 
 BASE_DIR = str(Path(__file__).parent.parent.parent)
 ENTITY_DIR = os.path.join(BASE_DIR, "wiki", "institutions")
+PERSONS_DIR = os.path.join(BASE_DIR, "wiki", "persons")
 PARSED_DATA = os.path.join(Path(__file__).parent.parent, "tmp", "parsed_data_with_concepts.json")
 
 
@@ -35,10 +36,15 @@ def parse_frontmatter(content):
     return fm, body
 
 
-def format_frontmatter(fm):
+def format_frontmatter(fm, is_person=False):
     """格式化 frontmatter 为字符串"""
     lines = ['---']
-    for key in ['type', 'name', 'subtype', 'source', 'source_count', 'first_incident', 'latest_incident', 'tags']:
+    if is_person:
+        # 人员字段顺序：type/name/gender/position/org/source/...
+        keys = ['type', 'name', 'gender', 'position', 'org', 'source', 'source_count', 'first_incident', 'latest_incident', 'tags']
+    else:
+        keys = ['type', 'name', 'subtype', 'source', 'source_count', 'first_incident', 'latest_incident', 'tags']
+    for key in keys:
         if key in fm:
             val = fm[key]
             if isinstance(val, list):
@@ -60,8 +66,11 @@ def truncate_text(text, max_len=250):
     return text[:max_len] + '...'
 
 
-def build_body(parsed, existing_fm):
-    """根据 parsed data 构建新的 entity body"""
+def build_body(parsed, existing_fm, is_person=False):
+    """根据 parsed data 构建新的 entity body
+
+    is_person: True 时用人员模板（姓名/性别/职务），False 时用机构模板（名称/类型）
+    """
     entity_name = parsed['entity'].replace('.md', '')
     concepts_all = set()
     for vc in parsed.get('violation_concepts', []):
@@ -78,11 +87,29 @@ def build_body(parsed, existing_fm):
 
     lines = []
 
-    # 基本信息
+    # 基本信息（机构 vs 人员 不同模板）
     lines.append('## 基本信息')
     lines.append('')
-    lines.append(f'- **名称**: {entity_name}')
-    lines.append(f'- **类型**: 基金管理人')
+    if is_person:
+        lines.append(f'- **姓名**: {entity_name}')
+        gender = existing_fm.get('gender', '')
+        position = existing_fm.get('position', '')
+        org = existing_fm.get('org', '')
+        if gender: lines.append(f'- **性别**: {gender}')
+        if position:
+            line = f'- **职务**: {position}'
+            if org:
+                # 尝试链接到机构页
+                org_safe = safe_filename(str(org)) if 'safe_filename' in dir() else str(org)
+                org_path = os.path.join(ENTITY_DIR, f"{org_safe}.md")
+                if os.path.exists(org_path):
+                    line += f" @ [{org}](../institutions/{org_safe}.md)"
+                else:
+                    line += f" @ {org}"
+            lines.append(line)
+    else:
+        lines.append(f'- **名称**: {entity_name}')
+        lines.append(f'- **类型**: 基金管理人')
     if incident_month:
         lines.append(f'- **首次处罚**: {incident_month}')
         lines.append(f'- **最近处罚**: {incident_month}')
@@ -165,7 +192,12 @@ def main():
 
     for record in data:
         entity_file = record['entity']
+        # 优先在 institutions/ 找，fallback 到 persons/
         filepath = os.path.join(ENTITY_DIR, entity_file)
+        is_person = False
+        if not os.path.exists(filepath):
+            filepath = os.path.join(PERSONS_DIR, entity_file)
+            is_person = True
 
         if not os.path.exists(filepath):
             stats["skipped"] += 1
@@ -186,8 +218,8 @@ def main():
             existing_fm['first_incident'] = incident_month
             existing_fm['latest_incident'] = incident_month
 
-        new_body = build_body(record, existing_fm)
-        new_content = format_frontmatter(existing_fm) + '\n' + new_body
+        new_body = build_body(record, existing_fm, is_person=is_person)
+        new_content = format_frontmatter(existing_fm, is_person=is_person) + '\n' + new_body
 
         with open(filepath, 'w') as f:
             f.write(new_content)
